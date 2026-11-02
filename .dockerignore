@@ -1,0 +1,15 @@
+.git
+.venv
+node_modules
+**/node_modules
+**/__pycache__
+**/*.egg-info
+apps/research-console/dist
+dist
+build
+research/results
+results
+test-results
+*.sqlite*
+.env
+.coverage

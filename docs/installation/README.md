@@ -11,3 +11,7 @@ For development, run `nx-stack serve` in one terminal and `npm run dev` in anoth
 The wheel contains the Python API and packaged migrations; the source release is the recommended full application distribution because it also includes the frontend, fixtures, tests and manuscripts. Build the frontend from source. The wheel alone does not bundle a compiled browser console.
 
 Clean reproduction: `python scripts/clean_install.py --destination ../nrs-reproduction`. The new destination must be outside the source checkout. Linux browser dependencies can be installed with `npm ci` followed by `npx playwright install-deps chromium`. The script installs Chromium itself. Avoid running on ports already serving another project; use `--port 8877` or another free port. The Vite check also uses port 5174.
+
+## Container
+
+A local Linux container build and startup smoke check passed. Set a private local `NX_WRITER_TOKEN` environment variable, then run `docker compose up --build`. Ports bind to 127.0.0.1:8876 and a named volume preserves the synthetic workspace. Enter the same token through the console access control. The image runs as a non-root user and uses pinned base-image digests. Stop with `docker compose down`; retain the data volume unless deliberately removing it. This container smoke check is distinct from the full native browser suite.
