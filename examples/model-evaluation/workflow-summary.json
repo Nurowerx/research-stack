@@ -1,0 +1,445 @@
+{
+  "project_id": "b56afd7a-eae4-4886-933c-7d186f52fce5",
+  "benchmark_id": "1335d116-5f8d-44c3-bcfa-c4bfd0270e6b",
+  "experiment_id": "3fc10dd8-7918-4f32-a729-b378dd602645",
+  "baseline_run": "c01ea4ea-c868-4b61-baca-5046e8c11d39",
+  "aware_run": "287374c8-ea25-489e-843d-88752439f311",
+  "heldout_run": "42875fab-38b2-47c4-bd68-2e174c9da020",
+  "correction_id": "72478c29-f4a8-444b-8b49-481e8257f83d",
+  "corrected_affected_run": "c4a789d4-70fe-40f2-877a-79fc8bbcf1bd",
+  "corrected_full_run": "9a01ffe0-a0ee-4aef-8593-a47a4d98c4fa",
+  "baseline_accuracy": {
+    "value": 0.16666666666666666,
+    "numerator": 10,
+    "denominator": 60,
+    "definition": "Exact answer match, including correct abstention, divided by all cases."
+  },
+  "aware_accuracy": {
+    "value": 1.0,
+    "numerator": 60,
+    "denominator": 60,
+    "definition": "Exact answer match, including correct abstention, divided by all cases."
+  },
+  "affected_comparison": {
+    "before_id": "c01ea4ea-c868-4b61-baca-5046e8c11d39",
+    "after_id": "c4a789d4-70fe-40f2-877a-79fc8bbcf1bd",
+    "paired_cases": 1,
+    "before_accuracy": 0.0,
+    "after_accuracy": 1.0,
+    "accuracy_delta": 1.0,
+    "improved": 1,
+    "regressed": 0,
+    "unchanged": 0,
+    "regression_detected": false,
+    "partial_overlap": true,
+    "correction_success": {
+      "value": 1.0,
+      "numerator": 1,
+      "denominator": 1,
+      "definition": "Previously imperfect shared cases whose repeated outputs are all correct after the change. Descriptive, not causal attribution."
+    },
+    "pairs": [
+      {
+        "case_id": "revision-000",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      }
+    ],
+    "interval": null,
+    "p_value": null,
+    "method": "Paired descriptive comparison over overlapping unique case IDs; no inferential significance claimed."
+  },
+  "full_comparison": {
+    "before_id": "c01ea4ea-c868-4b61-baca-5046e8c11d39",
+    "after_id": "9a01ffe0-a0ee-4aef-8593-a47a4d98c4fa",
+    "paired_cases": 60,
+    "before_accuracy": 0.16666666666666666,
+    "after_accuracy": 0.5,
+    "accuracy_delta": 0.3333333333333333,
+    "improved": 20,
+    "regressed": 0,
+    "unchanged": 40,
+    "regression_detected": false,
+    "partial_overlap": false,
+    "correction_success": {
+      "value": 0.4,
+      "numerator": 20,
+      "denominator": 50,
+      "definition": "Previously imperfect shared cases whose repeated outputs are all correct after the change. Descriptive, not causal attribution."
+    },
+    "pairs": [
+      {
+        "case_id": "conflict-000",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-001",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-002",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-003",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-004",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-005",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-006",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-007",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-008",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "conflict-009",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-000",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-001",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-002",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-003",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-004",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-005",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-006",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-007",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-008",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "distractor-009",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-000",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-001",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-002",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-003",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-004",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-005",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-006",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-007",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-008",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "lookup-009",
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-000",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-001",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-002",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-003",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-004",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-005",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-006",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-007",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-008",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "missing-009",
+        "before": 0.0,
+        "after": 0.0,
+        "delta": 0.0
+      },
+      {
+        "case_id": "recovery-000",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-001",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-002",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-003",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-004",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-005",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-006",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-007",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-008",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "recovery-009",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-000",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-001",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-002",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-003",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-004",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-005",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-006",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-007",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-008",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      {
+        "case_id": "revision-009",
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      }
+    ],
+    "interval": null,
+    "p_value": null,
+    "method": "Paired descriptive comparison over overlapping unique case IDs; no inferential significance claimed."
+  },
+  "integrity": {
+    "ok": true,
+    "records_checked": 4016,
+    "edges_checked": 7356,
+    "invalid_ids": [],
+    "scope": "Content hash consistency, not source authenticity or factual correctness."
+  },
+  "disclosure": "Actual executions of deterministic synthetic policies. Demonstration author/reviewer are scripted attribution labels; no human-participant study."
+}

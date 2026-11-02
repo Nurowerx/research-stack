@@ -1,0 +1,17 @@
+
+> nurowerx-research-stack@0.1.0 test:e2e
+> playwright test
+
+
+Running 5 tests using 1 worker
+
+  ok 1 tests\end-to-end\workflow.spec.ts:5:1 › Complete dataset, evaluation, provenance, correction, comparison and report workflow (2.9s)
+  ok 2 tests\end-to-end\workflow.spec.ts:112:1 › Linked chart filters, evidence navigation, annotations and version history (1.2s)
+  ok 3 tests\end-to-end\workflow.spec.ts:161:1 › Accessible overview, evaluation, evidence, dataset and review views (6.3s)
+  ok 4 tests\end-to-end\workflow.spec.ts:189:1 › Mobile layout and keyboard navigation remain usable (1.4s)
+  ok 5 tests\end-to-end\workflow.spec.ts:221:1 › Capture actual interface screenshots (2.7s)
+
+  5 passed (15.3s)
+
+(node:45944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

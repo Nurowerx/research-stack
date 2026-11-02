@@ -1,0 +1,65 @@
+{
+  "$defs": {
+    "JsonValue": {},
+    "Kind": {
+      "enum": [
+        "research_project",
+        "dataset",
+        "dataset_version",
+        "data_source",
+        "observation",
+        "experimental_scenario",
+        "experiment",
+        "model",
+        "model_version",
+        "algorithm",
+        "configuration",
+        "execution",
+        "output",
+        "claim",
+        "evidence",
+        "evaluation",
+        "metric",
+        "annotation",
+        "correction",
+        "researcher",
+        "review",
+        "conclusion"
+      ],
+      "title": "Kind",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "$ref": "#/$defs/Kind"
+    },
+    "label": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Label",
+      "type": "string"
+    },
+    "payload": {
+      "additionalProperties": {
+        "$ref": "#/$defs/JsonValue"
+      },
+      "title": "Payload",
+      "type": "object"
+    },
+    "actor": {
+      "default": "Local researcher",
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Actor",
+      "type": "string"
+    }
+  },
+  "required": [
+    "kind",
+    "label"
+  ],
+  "title": "EntityInput",
+  "type": "object"
+}

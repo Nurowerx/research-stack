@@ -1,0 +1,39 @@
+name: Reproducibility
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  fresh-install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Linux browser libraries
+        if: runner.os == 'Linux'
+        run: npm ci && npx playwright install-deps chromium
+      - name: Fresh install and complete reproduction
+        run: python scripts/clean_install.py --destination "${{ runner.temp }}/nrs-reproduction"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: reproduction-${{ runner.os }}
+          path: |
+            ${{ runner.temp }}/nrs-reproduction/*.log
+            ${{ runner.temp }}/nrs-reproduction/*.json
+            ${{ runner.temp }}/nrs-reproduction/*.xml
+            ${{ runner.temp }}/nrs-reproduction/screenshots/
+            ${{ runner.temp }}/nrs-reproduction/nrs-bench/
+          retention-days: 30

@@ -1,0 +1,80 @@
+{
+  "$defs": {
+    "JsonValue": {}
+  },
+  "additionalProperties": false,
+  "properties": {
+    "benchmark_id": {
+      "title": "Benchmark Id",
+      "type": "string"
+    },
+    "target": {
+      "default": "first-match",
+      "title": "Target",
+      "type": "string"
+    },
+    "split": {
+      "default": "development",
+      "enum": [
+        "development",
+        "heldout"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "repeats": {
+      "default": 2,
+      "maximum": 5,
+      "minimum": 1,
+      "title": "Repeats",
+      "type": "integer"
+    },
+    "parameters": {
+      "additionalProperties": {
+        "$ref": "#/$defs/JsonValue"
+      },
+      "title": "Parameters",
+      "type": "object"
+    },
+    "case_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 1000,
+      "title": "Case Ids",
+      "type": "array"
+    },
+    "correction_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 30,
+      "title": "Correction Ids",
+      "type": "array"
+    },
+    "parent_run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Parent Run Id"
+    },
+    "actor": {
+      "default": "Local researcher",
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Actor",
+      "type": "string"
+    }
+  },
+  "required": [
+    "benchmark_id"
+  ],
+  "title": "RunInput",
+  "type": "object"
+}

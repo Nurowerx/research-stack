@@ -1,0 +1,184 @@
+{
+  "$defs": {
+    "Case": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "family": {
+          "enum": [
+            "lookup",
+            "revision",
+            "conflict",
+            "missing",
+            "distractor",
+            "recovery"
+          ],
+          "title": "Family",
+          "type": "string"
+        },
+        "split": {
+          "enum": [
+            "development",
+            "heldout"
+          ],
+          "title": "Split",
+          "type": "string"
+        },
+        "question": {
+          "title": "Question",
+          "type": "string"
+        },
+        "input": {
+          "$ref": "#/$defs/QueryInput"
+        },
+        "expected_answer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Expected Answer"
+        },
+        "expected_evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Expected Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "family",
+        "split",
+        "question",
+        "input",
+        "expected_answer",
+        "expected_evidence_ids"
+      ],
+      "title": "Case",
+      "type": "object"
+    },
+    "EvidenceItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "revision": {
+          "minimum": 1,
+          "title": "Revision",
+          "type": "integer"
+        },
+        "trusted": {
+          "default": true,
+          "title": "Trusted",
+          "type": "boolean"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "key",
+        "value",
+        "revision",
+        "source"
+      ],
+      "title": "EvidenceItem",
+      "type": "object"
+    },
+    "QueryInput": {
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "title": "Case Id",
+          "type": "string"
+        },
+        "query_key": {
+          "title": "Query Key",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceItem"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "case_id",
+        "query_key",
+        "evidence"
+      ],
+      "title": "QueryInput",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "generator_version": {
+      "default": "nx-fixtures-1",
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "seed": {
+      "default": 20261102,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "synthetic": {
+      "const": true,
+      "default": true,
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "cases": {
+      "items": {
+        "$ref": "#/$defs/Case"
+      },
+      "maxItems": 1000,
+      "minItems": 1,
+      "title": "Cases",
+      "type": "array"
+    }
+  },
+  "required": [
+    "name",
+    "cases"
+  ],
+  "title": "Benchmark",
+  "type": "object"
+}

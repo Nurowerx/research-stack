@@ -1,0 +1,34 @@
+{
+  "schema_version": "nx-residency-fixture-1",
+  "representative_fixture": true,
+  "source_label": "Representative synthetic Resident Model Lab contract; no live integration",
+  "rows": [
+    {
+      "case_id": "fixture-0",
+      "strategy": "fifo",
+      "memory_budget_mb": 1024.0,
+      "resident_experts": 2,
+      "latency_ms": 120.0,
+      "peak_memory_mb": 800.0,
+      "output_match": true
+    },
+    {
+      "case_id": "fixture-1",
+      "strategy": "lru",
+      "memory_budget_mb": 1024.0,
+      "resident_experts": 3,
+      "latency_ms": 95.0,
+      "peak_memory_mb": 950.0,
+      "output_match": true
+    },
+    {
+      "case_id": "fixture-2",
+      "strategy": "oracle-fixture",
+      "memory_budget_mb": 1024.0,
+      "resident_experts": 4,
+      "latency_ms": 80.0,
+      "peak_memory_mb": 1020.0,
+      "output_match": true
+    }
+  ]
+}

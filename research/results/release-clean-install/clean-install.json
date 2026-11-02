@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "create-venv",
+      "exit_code": 0,
+      "seconds": 7.365
+    },
+    {
+      "name": "locked-python-install",
+      "exit_code": 0,
+      "seconds": 36.764
+    },
+    {
+      "name": "editable-source-install",
+      "exit_code": 0,
+      "seconds": 7.261
+    },
+    {
+      "name": "locked-npm-install",
+      "exit_code": 0,
+      "seconds": 8.089
+    },
+    {
+      "name": "python-tests",
+      "exit_code": 0,
+      "seconds": 7.055
+    },
+    {
+      "name": "chart-data-tests",
+      "exit_code": 0,
+      "seconds": 2.019
+    },
+    {
+      "name": "nrs-bench",
+      "exit_code": 0,
+      "seconds": 19.275
+    },
+    {
+      "name": "production-build",
+      "exit_code": 0,
+      "seconds": 6.932
+    },
+    {
+      "name": "database-migration",
+      "exit_code": 0,
+      "seconds": 0.945
+    },
+    {
+      "name": "fixture-seed",
+      "exit_code": 0,
+      "seconds": 2.36
+    },
+    {
+      "name": "browser-runtime-install",
+      "exit_code": 0,
+      "seconds": 1.517
+    },
+    {
+      "name": "production-service-ready",
+      "exit_code": 0
+    },
+    {
+      "name": "browser-workflow-accessibility-mobile",
+      "exit_code": 0,
+      "seconds": 18.254
+    },
+    {
+      "name": "vite-frontend-and-proxy-ready",
+      "exit_code": 0
+    },
+    {
+      "name": "semantic-reproduction",
+      "exit_code": 0,
+      "seconds": 2.306
+    },
+    {
+      "name": "python-version",
+      "exit_code": 0,
+      "seconds": 0.026
+    },
+    {
+      "name": "node-version",
+      "exit_code": 0,
+      "seconds": 0.026
+    }
+  ],
+  "duration_seconds": 123.111,
+  "platform": "win32",
+  "python": "Python 3.11.9",
+  "node": "v24.20.0",
+  "reproduction": {
+    "matched": true,
+    "expected": "237c0a705f41edd0fed470db054237505c9359ec1884a3049a23a4178b00c464",
+    "actual": "237c0a705f41edd0fed470db054237505c9359ec1884a3049a23a4178b00c464",
+    "scope": "Semantic results only; latency, IDs and timestamps vary."
+  },
+  "browser": {
+    "startTime": "2026-11-02T20:48:16.732Z",
+    "duration": 17272.91,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "Fresh copied source, new virtual environment, locked installs, new database, production and Vite startup, real browser workflow; public dependency caches may be reused."
+}

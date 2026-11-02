@@ -1,0 +1,24 @@
+{
+  "dataset_version_id": "377d7e06-d5b9-4b4b-bb87-ab8f66bf6be0",
+  "adapter": "epistemic-trust-lab/1.0",
+  "origin_run": "etl-d82851561148",
+  "observations": 5760,
+  "unique_cases": 240,
+  "verified": [
+    "observation_digest",
+    "benchmark_digest",
+    "config_digest",
+    "row identities",
+    "counts"
+  ],
+  "scope": "Read-only export validation. Not execution of ETL or verification of its scientific claims.",
+  "synthetic": true,
+  "project_id": "802eff4c-3faa-4d06-a776-b9c15810b081",
+  "trace_integrity": {
+    "ok": true,
+    "records_checked": 5763,
+    "edges_checked": 5761,
+    "invalid_ids": [],
+    "scope": "Content hash consistency, not source authenticity or factual correctness."
+  }
+}

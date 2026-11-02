@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "case_id": {
+      "title": "Case Id",
+      "type": "string"
+    },
+    "rule": {
+      "enum": [
+        "prefer_latest",
+        "trusted_only",
+        "abstain_conflict",
+        "abstain_missing"
+      ],
+      "title": "Rule",
+      "type": "string"
+    },
+    "rationale": {
+      "maxLength": 2000,
+      "minLength": 5,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "actor": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Actor",
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "case_id",
+    "rule",
+    "rationale",
+    "actor"
+  ],
+  "title": "CorrectionInput",
+  "type": "object"
+}

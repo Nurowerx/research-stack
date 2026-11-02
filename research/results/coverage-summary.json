@@ -1,0 +1,14 @@
+{
+  "command": "python -m pytest -q --cov --cov-report=json",
+  "scope": "Python backend/API packages; CLI browser-driven lines not covered by this process",
+  "totals": {
+    "covered_lines": 1012,
+    "num_statements": 1189,
+    "percent_covered": 85.11354079058032,
+    "percent_covered_display": "85",
+    "missing_lines": 177,
+    "excluded_lines": 4,
+    "percent_statements_covered": 85.11354079058032,
+    "percent_statements_covered_display": "85"
+  }
+}

@@ -1,0 +1,21 @@
+Obtaining file:///<release-workspace>/release-rerun-2/source
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: nurowerx-research-stack
+  Building editable for nurowerx-research-stack (pyproject.toml): started
+  Building editable for nurowerx-research-stack (pyproject.toml): finished with status 'done'
+  Created wheel for nurowerx-research-stack: filename=nurowerx_research_stack-0.1.0-0.editable-py3-none-any.whl size=4541 sha256=bb9011328b078c30c233b89300ebd1cddd41a58b7c7560b307e72ac272ac29e3
+  Stored in directory: <release-workspace>\release-rerun-2\temp\pip-ephem-wheel-cache-_xuz939o\wheels\74\ac\38\5553b51e422e0c1a9298099a920a5fbfdf911aa9cf9682c62f
+Successfully built nurowerx-research-stack
+Installing collected packages: nurowerx-research-stack
+Successfully installed nurowerx-research-stack-0.1.0
+
+
+[notice] A new release of pip is available: 24.0 -> 26.3
+[notice] To update, run: <release-workspace>\release-rerun-2\venv\Scripts\python.exe -m pip install --upgrade pip

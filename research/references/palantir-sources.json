@@ -1,0 +1,132 @@
+[
+  {
+    "repository": "palantir/ontology-starter-react-app",
+    "url": "https://github.com/palantir/ontology-starter-react-app",
+    "commit": "7b31d4be74d4e584370afa795ae8520aaa2793db",
+    "license": null,
+    "default_branch": "main",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/palantir/ontology-starter-react-app/blob/7b31d4be74d4e584370afa795ae8520aaa2793db/README.md"
+      },
+      {
+        "path": "src/app.tsx",
+        "url": "https://github.com/palantir/ontology-starter-react-app/blob/7b31d4be74d4e584370afa795ae8520aaa2793db/src/app.tsx"
+      },
+      {
+        "path": "src/pages/authCallback.tsx",
+        "url": "https://github.com/palantir/ontology-starter-react-app/blob/7b31d4be74d4e584370afa795ae8520aaa2793db/src/pages/authCallback.tsx"
+      },
+      {
+        "path": "src/pages/home.tsx",
+        "url": "https://github.com/palantir/ontology-starter-react-app/blob/7b31d4be74d4e584370afa795ae8520aaa2793db/src/pages/home.tsx"
+      },
+      {
+        "path": "src/pages/login.tsx",
+        "url": "https://github.com/palantir/ontology-starter-react-app/blob/7b31d4be74d4e584370afa795ae8520aaa2793db/src/pages/login.tsx"
+      },
+      {
+        "path": "src/utils/authenticatedRoute.tsx",
+        "url": "https://github.com/palantir/ontology-starter-react-app/blob/7b31d4be74d4e584370afa795ae8520aaa2793db/src/utils/authenticatedRoute.tsx"
+      }
+    ],
+    "reuse": "Reference only; no source/data copied into NRS."
+  },
+  {
+    "repository": "palantir/aip-community-registry",
+    "url": "https://github.com/palantir/aip-community-registry",
+    "commit": "290499c785b3738130a988e34159cb340253cb84",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "default_branch": "develop",
+    "inspected_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://github.com/palantir/aip-community-registry/blob/290499c785b3738130a988e34159cb340253cb84/LICENSE"
+      },
+      {
+        "path": "README.md",
+        "url": "https://github.com/palantir/aip-community-registry/blob/290499c785b3738130a988e34159cb340253cb84/README.md"
+      },
+      {
+        "path": "DevOps for AI Products/README.md",
+        "url": "https://github.com/palantir/aip-community-registry/blob/290499c785b3738130a988e34159cb340253cb84/DevOps%20for%20AI%20Products/README.md"
+      },
+      {
+        "path": "Feedback Loop with AIP Evals/README.md",
+        "url": "https://github.com/palantir/aip-community-registry/blob/290499c785b3738130a988e34159cb340253cb84/Feedback%20Loop%20with%20AIP%20Evals/README.md"
+      }
+    ],
+    "reuse": "Reference only; no source/data copied into NRS."
+  },
+  {
+    "repository": "palantir/plottable",
+    "url": "https://github.com/palantir/plottable",
+    "commit": "fb876e955b0122619b9efc2028a9c4c0f1c514db",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "default_branch": "develop",
+    "inspected_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://github.com/palantir/plottable/blob/fb876e955b0122619b9efc2028a9c4c0f1c514db/LICENSE"
+      },
+      {
+        "path": "README.md",
+        "url": "https://github.com/palantir/plottable/blob/fb876e955b0122619b9efc2028a9c4c0f1c514db/README.md"
+      },
+      {
+        "path": "test/core/datasetTests.ts",
+        "url": "https://github.com/palantir/plottable/blob/fb876e955b0122619b9efc2028a9c4c0f1c514db/test/core/datasetTests.ts"
+      },
+      {
+        "path": "test/plots/barPlotTests.ts",
+        "url": "https://github.com/palantir/plottable/blob/fb876e955b0122619b9efc2028a9c4c0f1c514db/test/plots/barPlotTests.ts"
+      },
+      {
+        "path": "test/scales/linearScaleTests.ts",
+        "url": "https://github.com/palantir/plottable/blob/fb876e955b0122619b9efc2028a9c4c0f1c514db/test/scales/linearScaleTests.ts"
+      }
+    ],
+    "reuse": "Reference only; no source/data copied into NRS."
+  },
+  {
+    "repository": "palantir/blueprint",
+    "url": "https://github.com/palantir/blueprint",
+    "commit": "1a8977df0420a54c7dcb0ea05fc51d7bba5ce268",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "default_branch": "develop",
+    "inspected_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://github.com/palantir/blueprint/blob/1a8977df0420a54c7dcb0ea05fc51d7bba5ce268/LICENSE"
+      },
+      {
+        "path": "README.md",
+        "url": "https://github.com/palantir/blueprint/blob/1a8977df0420a54c7dcb0ea05fc51d7bba5ce268/README.md"
+      },
+      {
+        "path": "packages/table/src/cell/cell.test.tsx",
+        "url": "https://github.com/palantir/blueprint/blob/1a8977df0420a54c7dcb0ea05fc51d7bba5ce268/packages/table/src/cell/cell.test.tsx"
+      }
+    ],
+    "reuse": "Reference only; no source/data copied into NRS."
+  }
+]

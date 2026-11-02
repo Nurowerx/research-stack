@@ -1,0 +1,28 @@
+{
+  "title": "NRS-Bench synthetic datasets 1.0.0",
+  "upload_type": "dataset",
+  "description": "Evidence provenance, deterministic evaluation, scientific visualization and human review through TRACE, LOOP, LENS and FRAME.",
+  "creators": [
+    {
+      "name": "Walker, Spencer H.",
+      "affiliation": "Nurowerx",
+      "orcid": "0009-0005-3574-1057"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "0.1.0",
+  "keywords": [
+    "provenance",
+    "research software",
+    "reproducibility",
+    "evaluation",
+    "visualization"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Nurowerx/research-stack",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

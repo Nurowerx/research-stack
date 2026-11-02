@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "source",
+      "kind": "data_source"
+    },
+    {
+      "id": "dataset",
+      "kind": "dataset_version"
+    },
+    {
+      "id": "algorithm",
+      "kind": "algorithm"
+    },
+    {
+      "id": "execution",
+      "kind": "execution"
+    },
+    {
+      "id": "output",
+      "kind": "output"
+    },
+    {
+      "id": "evidence",
+      "kind": "evidence"
+    },
+    {
+      "id": "claim",
+      "kind": "claim"
+    }
+  ],
+  "edges": [
+    [
+      "dataset",
+      "source",
+      "derived_from"
+    ],
+    [
+      "execution",
+      "dataset",
+      "evaluated_against"
+    ],
+    [
+      "execution",
+      "algorithm",
+      "depends_on"
+    ],
+    [
+      "output",
+      "execution",
+      "generated_by"
+    ],
+    [
+      "evidence",
+      "output",
+      "derived_from"
+    ],
+    [
+      "claim",
+      "evidence",
+      "supported_by"
+    ]
+  ],
+  "expected_reachable_from_claim": [
+    "algorithm",
+    "claim",
+    "dataset",
+    "evidence",
+    "execution",
+    "output",
+    "source"
+  ],
+  "broken_edge": [
+    "claim",
+    "absent",
+    "supported_by"
+  ],
+  "cycle_control": [
+    [
+      "output",
+      "evidence",
+      "derived_from"
+    ]
+  ],
+  "conflict_control": [
+    "claim",
+    "evidence",
+    "contradicted_by"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decision": {
+      "enum": [
+        "accept",
+        "reject"
+      ],
+      "title": "Decision",
+      "type": "string"
+    },
+    "rationale": {
+      "maxLength": 2000,
+      "minLength": 3,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "actor": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Actor",
+      "type": "string"
+    }
+  },
+  "required": [
+    "decision",
+    "rationale",
+    "actor"
+  ],
+  "title": "ReviewInput",
+  "type": "object"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@nurowerx/console",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@nurowerx/lens": "*",
+    "@nurowerx/frame": "*"
+  }
+}

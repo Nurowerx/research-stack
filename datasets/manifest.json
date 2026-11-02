@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0",
+  "datasets": [
+    {
+      "dataset_id": "nrs-bench/visualization",
+      "version": "1.0.0",
+      "path": "datasets/synthetic/v1/visualization.json",
+      "sha256": "7883c20168d8f365fdb7aad053d6a8b0d5bbf0bdbd746a6a5f11ee5eb55ab258",
+      "description": "Known means, missing values, a normal interval, gaps, outliers and 10,000 render inputs.",
+      "origin": "synthetic: generated originally for Nurowerx; no external dataset copied",
+      "generator": "scripts/generate_datasets.py",
+      "seed": null,
+      "license": "CC-BY-4.0",
+      "schema": "datasets/README.md",
+      "ground_truth": "explicit expected fields and independent formulas; policy answers constructed by family rules",
+      "protocol": "python scripts/benchmark.py; npm test; python -m pytest; browser suite via scripts/clean_install.py",
+      "limitations": "Designed finite synthetic tasks; seeds vary identifiers, not real-world task coverage."
+    },
+    {
+      "dataset_id": "nrs-bench/provenance",
+      "version": "1.0.0",
+      "path": "datasets/synthetic/v1/provenance.json",
+      "sha256": "ecaa058cc22c43beabfd1738268571637b57ae4af8884ff02e71f67d46cba920",
+      "description": "Symbolic seven-entity provenance graph and explicitly invalid controls.",
+      "origin": "synthetic: generated originally for Nurowerx; no external dataset copied",
+      "generator": "scripts/generate_datasets.py",
+      "seed": null,
+      "license": "CC-BY-4.0",
+      "schema": "datasets/README.md",
+      "ground_truth": "explicit expected fields and independent formulas; policy answers constructed by family rules",
+      "protocol": "python scripts/benchmark.py; npm test; python -m pytest; browser suite via scripts/clean_install.py",
+      "limitations": "Designed finite synthetic tasks; seeds vary identifiers, not real-world task coverage."
+    },
+    {
+      "dataset_id": "nrs-bench/evaluation-13",
+      "version": "1.0.0",
+      "path": "datasets/synthetic/v1/evaluation-13.json",
+      "sha256": "8852f89a8c61143df0634fd35eaeeeecadc9e02f1b6ec3c644af53c2b790d428",
+      "description": "120 synthetic cases, six designed families, 60 development and 60 heldout instances.",
+      "origin": "synthetic: generated originally for Nurowerx; no external dataset copied",
+      "generator": "scripts/generate_datasets.py",
+      "seed": 13,
+      "license": "CC-BY-4.0",
+      "schema": "datasets/schema.json",
+      "ground_truth": "explicit expected fields and independent formulas; policy answers constructed by family rules",
+      "protocol": "python scripts/benchmark.py; npm test; python -m pytest; browser suite via scripts/clean_install.py",
+      "limitations": "Designed finite synthetic tasks; seeds vary identifiers, not real-world task coverage."
+    },
+    {
+      "dataset_id": "nrs-bench/evaluation-42",
+      "version": "1.0.0",
+      "path": "datasets/synthetic/v1/evaluation-42.json",
+      "sha256": "50496be22756a45d7a650661b3ab3d670533a453c9b5124b4dfd5ae6af553c41",
+      "description": "120 synthetic cases, six designed families, 60 development and 60 heldout instances.",
+      "origin": "synthetic: generated originally for Nurowerx; no external dataset copied",
+      "generator": "scripts/generate_datasets.py",
+      "seed": 42,
+      "license": "CC-BY-4.0",
+      "schema": "datasets/schema.json",
+      "ground_truth": "explicit expected fields and independent formulas; policy answers constructed by family rules",
+      "protocol": "python scripts/benchmark.py; npm test; python -m pytest; browser suite via scripts/clean_install.py",
+      "limitations": "Designed finite synthetic tasks; seeds vary identifiers, not real-world task coverage."
+    },
+    {
+      "dataset_id": "nrs-bench/evaluation-20261102",
+      "version": "1.0.0",
+      "path": "datasets/synthetic/v1/evaluation-20261102.json",
+      "sha256": "e6a26df5f4ef2396043034582e81d7bc7f34f949ebf8df2a642d5bbfbcb4fbbb",
+      "description": "120 synthetic cases, six designed families, 60 development and 60 heldout instances.",
+      "origin": "synthetic: generated originally for Nurowerx; no external dataset copied",
+      "generator": "scripts/generate_datasets.py",
+      "seed": 20261102,
+      "license": "CC-BY-4.0",
+      "schema": "datasets/schema.json",
+      "ground_truth": "explicit expected fields and independent formulas; policy answers constructed by family rules",
+      "protocol": "python scripts/benchmark.py; npm test; python -m pytest; browser suite via scripts/clean_install.py",
+      "limitations": "Designed finite synthetic tasks; seeds vary identifiers, not real-world task coverage."
+    }
+  ]
+}

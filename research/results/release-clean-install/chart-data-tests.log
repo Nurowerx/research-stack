@@ -1,0 +1,14 @@
+
+> nurowerx-research-stack@0.1.0 test
+> vitest run
+
+
+ RUN  v4.1.12 <release-workspace>/release-rerun-2/source
+
+
+ Test Files  3 passed (3)
+      Tests  12 passed (12)
+   Start at  13:47:42
+   Duration  1.00s (transform 156ms, setup 0ms, import 1.54s, tests 68ms, environment 0ms)
+
+

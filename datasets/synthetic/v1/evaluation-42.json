@@ -1,0 +1,3609 @@
+{
+  "name": "Evidence revision benchmark",
+  "schema_version": "1.0",
+  "generator_version": "nx-fixtures-1",
+  "seed": 42,
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "lookup-000",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-93810? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-000",
+        "query_key": "asset-93810",
+        "evidence": [
+          {
+            "id": "lookup-000-a",
+            "key": "asset-93810",
+            "value": "zone-51",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-000-d",
+            "key": "other",
+            "value": "zone-13",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-51",
+      "expected_evidence_ids": [
+        "lookup-000-a"
+      ]
+    },
+    {
+      "id": "lookup-001",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-46048? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-001",
+        "query_key": "asset-46048",
+        "evidence": [
+          {
+            "id": "lookup-001-a",
+            "key": "asset-46048",
+            "value": "zone-64",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-001-d",
+            "key": "other",
+            "value": "zone-17",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-64",
+      "expected_evidence_ids": [
+        "lookup-001-a"
+      ]
+    },
+    {
+      "id": "lookup-002",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-28289? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-002",
+        "query_key": "asset-28289",
+        "evidence": [
+          {
+            "id": "lookup-002-a",
+            "key": "asset-28289",
+            "value": "zone-56",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-002-d",
+            "key": "other",
+            "value": "zone-33",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-56",
+      "expected_evidence_ids": [
+        "lookup-002-a"
+      ]
+    },
+    {
+      "id": "lookup-003",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-98696? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-003",
+        "query_key": "asset-98696",
+        "evidence": [
+          {
+            "id": "lookup-003-a",
+            "key": "asset-98696",
+            "value": "zone-84",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-003-d",
+            "key": "other",
+            "value": "zone-33",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-84",
+      "expected_evidence_ids": [
+        "lookup-003-a"
+      ]
+    },
+    {
+      "id": "lookup-004",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-21395? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-004",
+        "query_key": "asset-21395",
+        "evidence": [
+          {
+            "id": "lookup-004-a",
+            "key": "asset-21395",
+            "value": "zone-77",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-004-d",
+            "key": "other",
+            "value": "zone-28",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-77",
+      "expected_evidence_ids": [
+        "lookup-004-a"
+      ]
+    },
+    {
+      "id": "lookup-005",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-14165? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-005",
+        "query_key": "asset-14165",
+        "evidence": [
+          {
+            "id": "lookup-005-a",
+            "key": "asset-14165",
+            "value": "zone-55",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-005-d",
+            "key": "other",
+            "value": "zone-10",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-55",
+      "expected_evidence_ids": [
+        "lookup-005-a"
+      ]
+    },
+    {
+      "id": "lookup-006",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-38657? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-006",
+        "query_key": "asset-38657",
+        "evidence": [
+          {
+            "id": "lookup-006-a",
+            "key": "asset-38657",
+            "value": "zone-82",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-006-d",
+            "key": "other",
+            "value": "zone-17",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-82",
+      "expected_evidence_ids": [
+        "lookup-006-a"
+      ]
+    },
+    {
+      "id": "lookup-007",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-88907? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-007",
+        "query_key": "asset-88907",
+        "evidence": [
+          {
+            "id": "lookup-007-a",
+            "key": "asset-88907",
+            "value": "zone-85",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-007-d",
+            "key": "other",
+            "value": "zone-10",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-85",
+      "expected_evidence_ids": [
+        "lookup-007-a"
+      ]
+    },
+    {
+      "id": "lookup-008",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-36062? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-008",
+        "query_key": "asset-36062",
+        "evidence": [
+          {
+            "id": "lookup-008-a",
+            "key": "asset-36062",
+            "value": "zone-84",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-008-d",
+            "key": "other",
+            "value": "zone-32",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-84",
+      "expected_evidence_ids": [
+        "lookup-008-a"
+      ]
+    },
+    {
+      "id": "lookup-009",
+      "family": "lookup",
+      "split": "development",
+      "question": "What is the current supported zone for asset-64987? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-009",
+        "query_key": "asset-64987",
+        "evidence": [
+          {
+            "id": "lookup-009-a",
+            "key": "asset-64987",
+            "value": "zone-78",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-009-d",
+            "key": "other",
+            "value": "zone-17",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-78",
+      "expected_evidence_ids": [
+        "lookup-009-a"
+      ]
+    },
+    {
+      "id": "lookup-010",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-87236? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-010",
+        "query_key": "asset-87236",
+        "evidence": [
+          {
+            "id": "lookup-010-a",
+            "key": "asset-87236",
+            "value": "zone-50",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-010-d",
+            "key": "other",
+            "value": "zone-18",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-50",
+      "expected_evidence_ids": [
+        "lookup-010-a"
+      ]
+    },
+    {
+      "id": "lookup-011",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-30926? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-011",
+        "query_key": "asset-30926",
+        "evidence": [
+          {
+            "id": "lookup-011-a",
+            "key": "asset-30926",
+            "value": "zone-77",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-011-d",
+            "key": "other",
+            "value": "zone-32",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-77",
+      "expected_evidence_ids": [
+        "lookup-011-a"
+      ]
+    },
+    {
+      "id": "lookup-012",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-54597? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-012",
+        "query_key": "asset-54597",
+        "evidence": [
+          {
+            "id": "lookup-012-a",
+            "key": "asset-54597",
+            "value": "zone-59",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-012-d",
+            "key": "other",
+            "value": "zone-18",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-59",
+      "expected_evidence_ids": [
+        "lookup-012-a"
+      ]
+    },
+    {
+      "id": "lookup-013",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-38221? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-013",
+        "query_key": "asset-38221",
+        "evidence": [
+          {
+            "id": "lookup-013-a",
+            "key": "asset-38221",
+            "value": "zone-71",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-013-d",
+            "key": "other",
+            "value": "zone-34",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-71",
+      "expected_evidence_ids": [
+        "lookup-013-a"
+      ]
+    },
+    {
+      "id": "lookup-014",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-23396? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-014",
+        "query_key": "asset-23396",
+        "evidence": [
+          {
+            "id": "lookup-014-a",
+            "key": "asset-23396",
+            "value": "zone-74",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-014-d",
+            "key": "other",
+            "value": "zone-12",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-74",
+      "expected_evidence_ids": [
+        "lookup-014-a"
+      ]
+    },
+    {
+      "id": "lookup-015",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-22676? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-015",
+        "query_key": "asset-22676",
+        "evidence": [
+          {
+            "id": "lookup-015-a",
+            "key": "asset-22676",
+            "value": "zone-72",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-015-d",
+            "key": "other",
+            "value": "zone-21",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-72",
+      "expected_evidence_ids": [
+        "lookup-015-a"
+      ]
+    },
+    {
+      "id": "lookup-016",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-89131? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-016",
+        "query_key": "asset-89131",
+        "evidence": [
+          {
+            "id": "lookup-016-a",
+            "key": "asset-89131",
+            "value": "zone-52",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-016-d",
+            "key": "other",
+            "value": "zone-18",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-52",
+      "expected_evidence_ids": [
+        "lookup-016-a"
+      ]
+    },
+    {
+      "id": "lookup-017",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-70217? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-017",
+        "query_key": "asset-70217",
+        "evidence": [
+          {
+            "id": "lookup-017-a",
+            "key": "asset-70217",
+            "value": "zone-57",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-017-d",
+            "key": "other",
+            "value": "zone-27",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-57",
+      "expected_evidence_ids": [
+        "lookup-017-a"
+      ]
+    },
+    {
+      "id": "lookup-018",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-59615? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-018",
+        "query_key": "asset-59615",
+        "evidence": [
+          {
+            "id": "lookup-018-a",
+            "key": "asset-59615",
+            "value": "zone-85",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-018-d",
+            "key": "other",
+            "value": "zone-12",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-85",
+      "expected_evidence_ids": [
+        "lookup-018-a"
+      ]
+    },
+    {
+      "id": "lookup-019",
+      "family": "lookup",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-48427? Abstain if unresolved.",
+      "input": {
+        "case_id": "lookup-019",
+        "query_key": "asset-48427",
+        "evidence": [
+          {
+            "id": "lookup-019-a",
+            "key": "asset-48427",
+            "value": "zone-89",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "lookup-019-d",
+            "key": "other",
+            "value": "zone-36",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-89",
+      "expected_evidence_ids": [
+        "lookup-019-a"
+      ]
+    },
+    {
+      "id": "revision-000",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-57400? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-000",
+        "query_key": "asset-57400",
+        "evidence": [
+          {
+            "id": "revision-000-a",
+            "key": "asset-57400",
+            "value": "zone-28",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-000-b",
+            "key": "asset-57400",
+            "value": "zone-62",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-62",
+      "expected_evidence_ids": [
+        "revision-000-b"
+      ]
+    },
+    {
+      "id": "revision-001",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-19116? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-001",
+        "query_key": "asset-19116",
+        "evidence": [
+          {
+            "id": "revision-001-a",
+            "key": "asset-19116",
+            "value": "zone-11",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-001-b",
+            "key": "asset-19116",
+            "value": "zone-64",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-64",
+      "expected_evidence_ids": [
+        "revision-001-b"
+      ]
+    },
+    {
+      "id": "revision-002",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-47930? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-002",
+        "query_key": "asset-47930",
+        "evidence": [
+          {
+            "id": "revision-002-a",
+            "key": "asset-47930",
+            "value": "zone-12",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-002-b",
+            "key": "asset-47930",
+            "value": "zone-64",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-64",
+      "expected_evidence_ids": [
+        "revision-002-b"
+      ]
+    },
+    {
+      "id": "revision-003",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-23238? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-003",
+        "query_key": "asset-23238",
+        "evidence": [
+          {
+            "id": "revision-003-a",
+            "key": "asset-23238",
+            "value": "zone-22",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-003-b",
+            "key": "asset-23238",
+            "value": "zone-67",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-67",
+      "expected_evidence_ids": [
+        "revision-003-b"
+      ]
+    },
+    {
+      "id": "revision-004",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-69429? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-004",
+        "query_key": "asset-69429",
+        "evidence": [
+          {
+            "id": "revision-004-a",
+            "key": "asset-69429",
+            "value": "zone-30",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-004-b",
+            "key": "asset-69429",
+            "value": "zone-73",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-73",
+      "expected_evidence_ids": [
+        "revision-004-b"
+      ]
+    },
+    {
+      "id": "revision-005",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-31319? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-005",
+        "query_key": "asset-31319",
+        "evidence": [
+          {
+            "id": "revision-005-a",
+            "key": "asset-31319",
+            "value": "zone-21",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-005-b",
+            "key": "asset-31319",
+            "value": "zone-72",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-72",
+      "expected_evidence_ids": [
+        "revision-005-b"
+      ]
+    },
+    {
+      "id": "revision-006",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-37460? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-006",
+        "query_key": "asset-37460",
+        "evidence": [
+          {
+            "id": "revision-006-a",
+            "key": "asset-37460",
+            "value": "zone-31",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-006-b",
+            "key": "asset-37460",
+            "value": "zone-67",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-67",
+      "expected_evidence_ids": [
+        "revision-006-b"
+      ]
+    },
+    {
+      "id": "revision-007",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-99593? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-007",
+        "query_key": "asset-99593",
+        "evidence": [
+          {
+            "id": "revision-007-a",
+            "key": "asset-99593",
+            "value": "zone-30",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-007-b",
+            "key": "asset-99593",
+            "value": "zone-54",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-54",
+      "expected_evidence_ids": [
+        "revision-007-b"
+      ]
+    },
+    {
+      "id": "revision-008",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-89840? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-008",
+        "query_key": "asset-89840",
+        "evidence": [
+          {
+            "id": "revision-008-a",
+            "key": "asset-89840",
+            "value": "zone-30",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-008-b",
+            "key": "asset-89840",
+            "value": "zone-60",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-60",
+      "expected_evidence_ids": [
+        "revision-008-b"
+      ]
+    },
+    {
+      "id": "revision-009",
+      "family": "revision",
+      "split": "development",
+      "question": "What is the current supported zone for asset-80010? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-009",
+        "query_key": "asset-80010",
+        "evidence": [
+          {
+            "id": "revision-009-a",
+            "key": "asset-80010",
+            "value": "zone-33",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-009-b",
+            "key": "asset-80010",
+            "value": "zone-65",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-65",
+      "expected_evidence_ids": [
+        "revision-009-b"
+      ]
+    },
+    {
+      "id": "revision-010",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-31417? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-010",
+        "query_key": "asset-31417",
+        "evidence": [
+          {
+            "id": "revision-010-a",
+            "key": "asset-31417",
+            "value": "zone-24",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-010-b",
+            "key": "asset-31417",
+            "value": "zone-74",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-74",
+      "expected_evidence_ids": [
+        "revision-010-b"
+      ]
+    },
+    {
+      "id": "revision-011",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-45382? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-011",
+        "query_key": "asset-45382",
+        "evidence": [
+          {
+            "id": "revision-011-a",
+            "key": "asset-45382",
+            "value": "zone-39",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-011-b",
+            "key": "asset-45382",
+            "value": "zone-85",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-85",
+      "expected_evidence_ids": [
+        "revision-011-b"
+      ]
+    },
+    {
+      "id": "revision-012",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-38785? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-012",
+        "query_key": "asset-38785",
+        "evidence": [
+          {
+            "id": "revision-012-a",
+            "key": "asset-38785",
+            "value": "zone-31",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-012-b",
+            "key": "asset-38785",
+            "value": "zone-70",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-70",
+      "expected_evidence_ids": [
+        "revision-012-b"
+      ]
+    },
+    {
+      "id": "revision-013",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-17331? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-013",
+        "query_key": "asset-17331",
+        "evidence": [
+          {
+            "id": "revision-013-a",
+            "key": "asset-17331",
+            "value": "zone-17",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-013-b",
+            "key": "asset-17331",
+            "value": "zone-52",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-52",
+      "expected_evidence_ids": [
+        "revision-013-b"
+      ]
+    },
+    {
+      "id": "revision-014",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-51347? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-014",
+        "query_key": "asset-51347",
+        "evidence": [
+          {
+            "id": "revision-014-a",
+            "key": "asset-51347",
+            "value": "zone-22",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-014-b",
+            "key": "asset-51347",
+            "value": "zone-67",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-67",
+      "expected_evidence_ids": [
+        "revision-014-b"
+      ]
+    },
+    {
+      "id": "revision-015",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-18675? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-015",
+        "query_key": "asset-18675",
+        "evidence": [
+          {
+            "id": "revision-015-a",
+            "key": "asset-18675",
+            "value": "zone-16",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-015-b",
+            "key": "asset-18675",
+            "value": "zone-86",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-86",
+      "expected_evidence_ids": [
+        "revision-015-b"
+      ]
+    },
+    {
+      "id": "revision-016",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-51245? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-016",
+        "query_key": "asset-51245",
+        "evidence": [
+          {
+            "id": "revision-016-a",
+            "key": "asset-51245",
+            "value": "zone-16",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-016-b",
+            "key": "asset-51245",
+            "value": "zone-81",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-81",
+      "expected_evidence_ids": [
+        "revision-016-b"
+      ]
+    },
+    {
+      "id": "revision-017",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-61856? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-017",
+        "query_key": "asset-61856",
+        "evidence": [
+          {
+            "id": "revision-017-a",
+            "key": "asset-61856",
+            "value": "zone-38",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-017-b",
+            "key": "asset-61856",
+            "value": "zone-79",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-79",
+      "expected_evidence_ids": [
+        "revision-017-b"
+      ]
+    },
+    {
+      "id": "revision-018",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-28726? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-018",
+        "query_key": "asset-28726",
+        "evidence": [
+          {
+            "id": "revision-018-a",
+            "key": "asset-28726",
+            "value": "zone-18",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-018-b",
+            "key": "asset-28726",
+            "value": "zone-58",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-58",
+      "expected_evidence_ids": [
+        "revision-018-b"
+      ]
+    },
+    {
+      "id": "revision-019",
+      "family": "revision",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-42325? Abstain if unresolved.",
+      "input": {
+        "case_id": "revision-019",
+        "query_key": "asset-42325",
+        "evidence": [
+          {
+            "id": "revision-019-a",
+            "key": "asset-42325",
+            "value": "zone-33",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "revision-019-b",
+            "key": "asset-42325",
+            "value": "zone-85",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-85",
+      "expected_evidence_ids": [
+        "revision-019-b"
+      ]
+    },
+    {
+      "id": "conflict-000",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-80644? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-000",
+        "query_key": "asset-80644",
+        "evidence": [
+          {
+            "id": "conflict-000-a",
+            "key": "asset-80644",
+            "value": "zone-18",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-000-b",
+            "key": "asset-80644",
+            "value": "zone-87",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-001",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-66155? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-001",
+        "query_key": "asset-66155",
+        "evidence": [
+          {
+            "id": "conflict-001-a",
+            "key": "asset-66155",
+            "value": "zone-38",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-001-b",
+            "key": "asset-66155",
+            "value": "zone-87",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-002",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-62350? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-002",
+        "query_key": "asset-62350",
+        "evidence": [
+          {
+            "id": "conflict-002-a",
+            "key": "asset-62350",
+            "value": "zone-21",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-002-b",
+            "key": "asset-62350",
+            "value": "zone-64",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-003",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-28131? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-003",
+        "query_key": "asset-28131",
+        "evidence": [
+          {
+            "id": "conflict-003-a",
+            "key": "asset-28131",
+            "value": "zone-26",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-003-b",
+            "key": "asset-28131",
+            "value": "zone-81",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-004",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-21915? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-004",
+        "query_key": "asset-21915",
+        "evidence": [
+          {
+            "id": "conflict-004-a",
+            "key": "asset-21915",
+            "value": "zone-34",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-004-b",
+            "key": "asset-21915",
+            "value": "zone-53",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-005",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-24371? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-005",
+        "query_key": "asset-24371",
+        "evidence": [
+          {
+            "id": "conflict-005-a",
+            "key": "asset-24371",
+            "value": "zone-14",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-005-b",
+            "key": "asset-24371",
+            "value": "zone-60",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-006",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-99192? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-006",
+        "query_key": "asset-99192",
+        "evidence": [
+          {
+            "id": "conflict-006-a",
+            "key": "asset-99192",
+            "value": "zone-23",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-006-b",
+            "key": "asset-99192",
+            "value": "zone-88",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-007",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-18326? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-007",
+        "query_key": "asset-18326",
+        "evidence": [
+          {
+            "id": "conflict-007-a",
+            "key": "asset-18326",
+            "value": "zone-22",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-007-b",
+            "key": "asset-18326",
+            "value": "zone-74",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-008",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-88104? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-008",
+        "query_key": "asset-88104",
+        "evidence": [
+          {
+            "id": "conflict-008-a",
+            "key": "asset-88104",
+            "value": "zone-24",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-008-b",
+            "key": "asset-88104",
+            "value": "zone-83",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-009",
+      "family": "conflict",
+      "split": "development",
+      "question": "What is the current supported zone for asset-42953? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-009",
+        "query_key": "asset-42953",
+        "evidence": [
+          {
+            "id": "conflict-009-a",
+            "key": "asset-42953",
+            "value": "zone-27",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-009-b",
+            "key": "asset-42953",
+            "value": "zone-50",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-010",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-99166? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-010",
+        "query_key": "asset-99166",
+        "evidence": [
+          {
+            "id": "conflict-010-a",
+            "key": "asset-99166",
+            "value": "zone-33",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-010-b",
+            "key": "asset-99166",
+            "value": "zone-57",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-011",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-99353? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-011",
+        "query_key": "asset-99353",
+        "evidence": [
+          {
+            "id": "conflict-011-a",
+            "key": "asset-99353",
+            "value": "zone-38",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-011-b",
+            "key": "asset-99353",
+            "value": "zone-84",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-012",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-44973? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-012",
+        "query_key": "asset-44973",
+        "evidence": [
+          {
+            "id": "conflict-012-a",
+            "key": "asset-44973",
+            "value": "zone-34",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-012-b",
+            "key": "asset-44973",
+            "value": "zone-71",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-013",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-24621? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-013",
+        "query_key": "asset-24621",
+        "evidence": [
+          {
+            "id": "conflict-013-a",
+            "key": "asset-24621",
+            "value": "zone-19",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-013-b",
+            "key": "asset-24621",
+            "value": "zone-77",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-014",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-30730? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-014",
+        "query_key": "asset-30730",
+        "evidence": [
+          {
+            "id": "conflict-014-a",
+            "key": "asset-30730",
+            "value": "zone-24",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-014-b",
+            "key": "asset-30730",
+            "value": "zone-50",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-015",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-44522? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-015",
+        "query_key": "asset-44522",
+        "evidence": [
+          {
+            "id": "conflict-015-a",
+            "key": "asset-44522",
+            "value": "zone-26",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-015-b",
+            "key": "asset-44522",
+            "value": "zone-61",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-016",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-76542? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-016",
+        "query_key": "asset-76542",
+        "evidence": [
+          {
+            "id": "conflict-016-a",
+            "key": "asset-76542",
+            "value": "zone-39",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-016-b",
+            "key": "asset-76542",
+            "value": "zone-56",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-017",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-91959? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-017",
+        "query_key": "asset-91959",
+        "evidence": [
+          {
+            "id": "conflict-017-a",
+            "key": "asset-91959",
+            "value": "zone-19",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-017-b",
+            "key": "asset-91959",
+            "value": "zone-82",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-018",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-89818? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-018",
+        "query_key": "asset-89818",
+        "evidence": [
+          {
+            "id": "conflict-018-a",
+            "key": "asset-89818",
+            "value": "zone-16",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-018-b",
+            "key": "asset-89818",
+            "value": "zone-59",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "conflict-019",
+      "family": "conflict",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-59009? Abstain if unresolved.",
+      "input": {
+        "case_id": "conflict-019",
+        "query_key": "asset-59009",
+        "evidence": [
+          {
+            "id": "conflict-019-a",
+            "key": "asset-59009",
+            "value": "zone-34",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "conflict-019-b",
+            "key": "asset-59009",
+            "value": "zone-60",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-000",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-80697? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-000",
+        "query_key": "asset-80697",
+        "evidence": [
+          {
+            "id": "missing-000-d",
+            "key": "other",
+            "value": "zone-34",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-001",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-10074? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-001",
+        "query_key": "asset-10074",
+        "evidence": [
+          {
+            "id": "missing-001-d",
+            "key": "other",
+            "value": "zone-29",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-002",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-74042? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-002",
+        "query_key": "asset-74042",
+        "evidence": [
+          {
+            "id": "missing-002-d",
+            "key": "other",
+            "value": "zone-10",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-003",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-57576? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-003",
+        "query_key": "asset-57576",
+        "evidence": [
+          {
+            "id": "missing-003-d",
+            "key": "other",
+            "value": "zone-38",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-004",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-41385? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-004",
+        "query_key": "asset-41385",
+        "evidence": [
+          {
+            "id": "missing-004-d",
+            "key": "other",
+            "value": "zone-11",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-005",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-84364? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-005",
+        "query_key": "asset-84364",
+        "evidence": [
+          {
+            "id": "missing-005-d",
+            "key": "other",
+            "value": "zone-12",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-006",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-73699? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-006",
+        "query_key": "asset-73699",
+        "evidence": [
+          {
+            "id": "missing-006-d",
+            "key": "other",
+            "value": "zone-36",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-007",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-79822? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-007",
+        "query_key": "asset-79822",
+        "evidence": [
+          {
+            "id": "missing-007-d",
+            "key": "other",
+            "value": "zone-34",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-008",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-26828? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-008",
+        "query_key": "asset-26828",
+        "evidence": [
+          {
+            "id": "missing-008-d",
+            "key": "other",
+            "value": "zone-31",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-009",
+      "family": "missing",
+      "split": "development",
+      "question": "What is the current supported zone for asset-82063? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-009",
+        "query_key": "asset-82063",
+        "evidence": [
+          {
+            "id": "missing-009-d",
+            "key": "other",
+            "value": "zone-15",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-010",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-79163? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-010",
+        "query_key": "asset-79163",
+        "evidence": [
+          {
+            "id": "missing-010-d",
+            "key": "other",
+            "value": "zone-37",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-011",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-65461? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-011",
+        "query_key": "asset-65461",
+        "evidence": [
+          {
+            "id": "missing-011-d",
+            "key": "other",
+            "value": "zone-16",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-012",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-36365? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-012",
+        "query_key": "asset-36365",
+        "evidence": [
+          {
+            "id": "missing-012-d",
+            "key": "other",
+            "value": "zone-32",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-013",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-62296? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-013",
+        "query_key": "asset-62296",
+        "evidence": [
+          {
+            "id": "missing-013-d",
+            "key": "other",
+            "value": "zone-31",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-014",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-67422? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-014",
+        "query_key": "asset-67422",
+        "evidence": [
+          {
+            "id": "missing-014-d",
+            "key": "other",
+            "value": "zone-38",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-015",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-69177? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-015",
+        "query_key": "asset-69177",
+        "evidence": [
+          {
+            "id": "missing-015-d",
+            "key": "other",
+            "value": "zone-13",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-016",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-39451? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-016",
+        "query_key": "asset-39451",
+        "evidence": [
+          {
+            "id": "missing-016-d",
+            "key": "other",
+            "value": "zone-12",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-017",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-12757? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-017",
+        "query_key": "asset-12757",
+        "evidence": [
+          {
+            "id": "missing-017-d",
+            "key": "other",
+            "value": "zone-28",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-018",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-40161? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-018",
+        "query_key": "asset-40161",
+        "evidence": [
+          {
+            "id": "missing-018-d",
+            "key": "other",
+            "value": "zone-28",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "missing-019",
+      "family": "missing",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-10942? Abstain if unresolved.",
+      "input": {
+        "case_id": "missing-019",
+        "query_key": "asset-10942",
+        "evidence": [
+          {
+            "id": "missing-019-d",
+            "key": "other",
+            "value": "zone-12",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": null,
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "distractor-000",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-40007? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-000",
+        "query_key": "asset-40007",
+        "evidence": [
+          {
+            "id": "distractor-000-a",
+            "key": "asset-40007",
+            "value": "zone-12",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-000-b",
+            "key": "asset-40007",
+            "value": "zone-52",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-52",
+      "expected_evidence_ids": [
+        "distractor-000-b"
+      ]
+    },
+    {
+      "id": "distractor-001",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-53309? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-001",
+        "query_key": "asset-53309",
+        "evidence": [
+          {
+            "id": "distractor-001-a",
+            "key": "asset-53309",
+            "value": "zone-12",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-001-b",
+            "key": "asset-53309",
+            "value": "zone-82",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-82",
+      "expected_evidence_ids": [
+        "distractor-001-b"
+      ]
+    },
+    {
+      "id": "distractor-002",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-41195? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-002",
+        "query_key": "asset-41195",
+        "evidence": [
+          {
+            "id": "distractor-002-a",
+            "key": "asset-41195",
+            "value": "zone-18",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-002-b",
+            "key": "asset-41195",
+            "value": "zone-81",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-81",
+      "expected_evidence_ids": [
+        "distractor-002-b"
+      ]
+    },
+    {
+      "id": "distractor-003",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-38080? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-003",
+        "query_key": "asset-38080",
+        "evidence": [
+          {
+            "id": "distractor-003-a",
+            "key": "asset-38080",
+            "value": "zone-27",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-003-b",
+            "key": "asset-38080",
+            "value": "zone-58",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-58",
+      "expected_evidence_ids": [
+        "distractor-003-b"
+      ]
+    },
+    {
+      "id": "distractor-004",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-84847? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-004",
+        "query_key": "asset-84847",
+        "evidence": [
+          {
+            "id": "distractor-004-a",
+            "key": "asset-84847",
+            "value": "zone-28",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-004-b",
+            "key": "asset-84847",
+            "value": "zone-80",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-80",
+      "expected_evidence_ids": [
+        "distractor-004-b"
+      ]
+    },
+    {
+      "id": "distractor-005",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-41850? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-005",
+        "query_key": "asset-41850",
+        "evidence": [
+          {
+            "id": "distractor-005-a",
+            "key": "asset-41850",
+            "value": "zone-35",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-005-b",
+            "key": "asset-41850",
+            "value": "zone-80",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-80",
+      "expected_evidence_ids": [
+        "distractor-005-b"
+      ]
+    },
+    {
+      "id": "distractor-006",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-63354? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-006",
+        "query_key": "asset-63354",
+        "evidence": [
+          {
+            "id": "distractor-006-a",
+            "key": "asset-63354",
+            "value": "zone-16",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-006-b",
+            "key": "asset-63354",
+            "value": "zone-56",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-56",
+      "expected_evidence_ids": [
+        "distractor-006-b"
+      ]
+    },
+    {
+      "id": "distractor-007",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-22704? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-007",
+        "query_key": "asset-22704",
+        "evidence": [
+          {
+            "id": "distractor-007-a",
+            "key": "asset-22704",
+            "value": "zone-31",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-007-b",
+            "key": "asset-22704",
+            "value": "zone-77",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-77",
+      "expected_evidence_ids": [
+        "distractor-007-b"
+      ]
+    },
+    {
+      "id": "distractor-008",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-56438? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-008",
+        "query_key": "asset-56438",
+        "evidence": [
+          {
+            "id": "distractor-008-a",
+            "key": "asset-56438",
+            "value": "zone-23",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-008-b",
+            "key": "asset-56438",
+            "value": "zone-76",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-76",
+      "expected_evidence_ids": [
+        "distractor-008-b"
+      ]
+    },
+    {
+      "id": "distractor-009",
+      "family": "distractor",
+      "split": "development",
+      "question": "What is the current supported zone for asset-71213? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-009",
+        "query_key": "asset-71213",
+        "evidence": [
+          {
+            "id": "distractor-009-a",
+            "key": "asset-71213",
+            "value": "zone-37",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-009-b",
+            "key": "asset-71213",
+            "value": "zone-53",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-53",
+      "expected_evidence_ids": [
+        "distractor-009-b"
+      ]
+    },
+    {
+      "id": "distractor-010",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-98259? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-010",
+        "query_key": "asset-98259",
+        "evidence": [
+          {
+            "id": "distractor-010-a",
+            "key": "asset-98259",
+            "value": "zone-30",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-010-b",
+            "key": "asset-98259",
+            "value": "zone-56",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-56",
+      "expected_evidence_ids": [
+        "distractor-010-b"
+      ]
+    },
+    {
+      "id": "distractor-011",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-17944? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-011",
+        "query_key": "asset-17944",
+        "evidence": [
+          {
+            "id": "distractor-011-a",
+            "key": "asset-17944",
+            "value": "zone-22",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-011-b",
+            "key": "asset-17944",
+            "value": "zone-71",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-71",
+      "expected_evidence_ids": [
+        "distractor-011-b"
+      ]
+    },
+    {
+      "id": "distractor-012",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-24322? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-012",
+        "query_key": "asset-24322",
+        "evidence": [
+          {
+            "id": "distractor-012-a",
+            "key": "asset-24322",
+            "value": "zone-17",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-012-b",
+            "key": "asset-24322",
+            "value": "zone-62",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-62",
+      "expected_evidence_ids": [
+        "distractor-012-b"
+      ]
+    },
+    {
+      "id": "distractor-013",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-34931? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-013",
+        "query_key": "asset-34931",
+        "evidence": [
+          {
+            "id": "distractor-013-a",
+            "key": "asset-34931",
+            "value": "zone-27",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-013-b",
+            "key": "asset-34931",
+            "value": "zone-78",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-78",
+      "expected_evidence_ids": [
+        "distractor-013-b"
+      ]
+    },
+    {
+      "id": "distractor-014",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-28373? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-014",
+        "query_key": "asset-28373",
+        "evidence": [
+          {
+            "id": "distractor-014-a",
+            "key": "asset-28373",
+            "value": "zone-23",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-014-b",
+            "key": "asset-28373",
+            "value": "zone-61",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-61",
+      "expected_evidence_ids": [
+        "distractor-014-b"
+      ]
+    },
+    {
+      "id": "distractor-015",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-46509? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-015",
+        "query_key": "asset-46509",
+        "evidence": [
+          {
+            "id": "distractor-015-a",
+            "key": "asset-46509",
+            "value": "zone-24",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-015-b",
+            "key": "asset-46509",
+            "value": "zone-65",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-65",
+      "expected_evidence_ids": [
+        "distractor-015-b"
+      ]
+    },
+    {
+      "id": "distractor-016",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-19880? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-016",
+        "query_key": "asset-19880",
+        "evidence": [
+          {
+            "id": "distractor-016-a",
+            "key": "asset-19880",
+            "value": "zone-24",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-016-b",
+            "key": "asset-19880",
+            "value": "zone-85",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-85",
+      "expected_evidence_ids": [
+        "distractor-016-b"
+      ]
+    },
+    {
+      "id": "distractor-017",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-22833? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-017",
+        "query_key": "asset-22833",
+        "evidence": [
+          {
+            "id": "distractor-017-a",
+            "key": "asset-22833",
+            "value": "zone-11",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-017-b",
+            "key": "asset-22833",
+            "value": "zone-84",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-84",
+      "expected_evidence_ids": [
+        "distractor-017-b"
+      ]
+    },
+    {
+      "id": "distractor-018",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-11934? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-018",
+        "query_key": "asset-11934",
+        "evidence": [
+          {
+            "id": "distractor-018-a",
+            "key": "asset-11934",
+            "value": "zone-12",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-018-b",
+            "key": "asset-11934",
+            "value": "zone-65",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-65",
+      "expected_evidence_ids": [
+        "distractor-018-b"
+      ]
+    },
+    {
+      "id": "distractor-019",
+      "family": "distractor",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-31798? Abstain if unresolved.",
+      "input": {
+        "case_id": "distractor-019",
+        "query_key": "asset-31798",
+        "evidence": [
+          {
+            "id": "distractor-019-a",
+            "key": "asset-31798",
+            "value": "zone-23",
+            "revision": 9,
+            "trusted": false,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "distractor-019-b",
+            "key": "asset-31798",
+            "value": "zone-81",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-81",
+      "expected_evidence_ids": [
+        "distractor-019-b"
+      ]
+    },
+    {
+      "id": "recovery-000",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-73092? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-000",
+        "query_key": "asset-73092",
+        "evidence": [
+          {
+            "id": "recovery-000-a",
+            "key": "asset-73092",
+            "value": "zone-16",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-000-b",
+            "key": "asset-73092",
+            "value": "zone-75",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-75",
+      "expected_evidence_ids": [
+        "recovery-000-b"
+      ]
+    },
+    {
+      "id": "recovery-001",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-17685? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-001",
+        "query_key": "asset-17685",
+        "evidence": [
+          {
+            "id": "recovery-001-a",
+            "key": "asset-17685",
+            "value": "zone-15",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-001-b",
+            "key": "asset-17685",
+            "value": "zone-74",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-74",
+      "expected_evidence_ids": [
+        "recovery-001-b"
+      ]
+    },
+    {
+      "id": "recovery-002",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-10282? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-002",
+        "query_key": "asset-10282",
+        "evidence": [
+          {
+            "id": "recovery-002-a",
+            "key": "asset-10282",
+            "value": "zone-22",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-002-b",
+            "key": "asset-10282",
+            "value": "zone-66",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-66",
+      "expected_evidence_ids": [
+        "recovery-002-b"
+      ]
+    },
+    {
+      "id": "recovery-003",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-69638? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-003",
+        "query_key": "asset-69638",
+        "evidence": [
+          {
+            "id": "recovery-003-a",
+            "key": "asset-69638",
+            "value": "zone-19",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-003-b",
+            "key": "asset-69638",
+            "value": "zone-77",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-77",
+      "expected_evidence_ids": [
+        "recovery-003-b"
+      ]
+    },
+    {
+      "id": "recovery-004",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-82845? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-004",
+        "query_key": "asset-82845",
+        "evidence": [
+          {
+            "id": "recovery-004-a",
+            "key": "asset-82845",
+            "value": "zone-31",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-004-b",
+            "key": "asset-82845",
+            "value": "zone-81",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-81",
+      "expected_evidence_ids": [
+        "recovery-004-b"
+      ]
+    },
+    {
+      "id": "recovery-005",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-30289? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-005",
+        "query_key": "asset-30289",
+        "evidence": [
+          {
+            "id": "recovery-005-a",
+            "key": "asset-30289",
+            "value": "zone-16",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-005-b",
+            "key": "asset-30289",
+            "value": "zone-68",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-68",
+      "expected_evidence_ids": [
+        "recovery-005-b"
+      ]
+    },
+    {
+      "id": "recovery-006",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-38534? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-006",
+        "query_key": "asset-38534",
+        "evidence": [
+          {
+            "id": "recovery-006-a",
+            "key": "asset-38534",
+            "value": "zone-11",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-006-b",
+            "key": "asset-38534",
+            "value": "zone-87",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-87",
+      "expected_evidence_ids": [
+        "recovery-006-b"
+      ]
+    },
+    {
+      "id": "recovery-007",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-81066? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-007",
+        "query_key": "asset-81066",
+        "evidence": [
+          {
+            "id": "recovery-007-a",
+            "key": "asset-81066",
+            "value": "zone-11",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-007-b",
+            "key": "asset-81066",
+            "value": "zone-70",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-70",
+      "expected_evidence_ids": [
+        "recovery-007-b"
+      ]
+    },
+    {
+      "id": "recovery-008",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-17492? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-008",
+        "query_key": "asset-17492",
+        "evidence": [
+          {
+            "id": "recovery-008-a",
+            "key": "asset-17492",
+            "value": "zone-11",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-008-b",
+            "key": "asset-17492",
+            "value": "zone-87",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-87",
+      "expected_evidence_ids": [
+        "recovery-008-b"
+      ]
+    },
+    {
+      "id": "recovery-009",
+      "family": "recovery",
+      "split": "development",
+      "question": "What is the current supported zone for asset-72493? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-009",
+        "query_key": "asset-72493",
+        "evidence": [
+          {
+            "id": "recovery-009-a",
+            "key": "asset-72493",
+            "value": "zone-26",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-009-b",
+            "key": "asset-72493",
+            "value": "zone-83",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-83",
+      "expected_evidence_ids": [
+        "recovery-009-b"
+      ]
+    },
+    {
+      "id": "recovery-010",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-30635? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-010",
+        "query_key": "asset-30635",
+        "evidence": [
+          {
+            "id": "recovery-010-a",
+            "key": "asset-30635",
+            "value": "zone-11",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-010-b",
+            "key": "asset-30635",
+            "value": "zone-82",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-82",
+      "expected_evidence_ids": [
+        "recovery-010-b"
+      ]
+    },
+    {
+      "id": "recovery-011",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-20500? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-011",
+        "query_key": "asset-20500",
+        "evidence": [
+          {
+            "id": "recovery-011-a",
+            "key": "asset-20500",
+            "value": "zone-37",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-011-b",
+            "key": "asset-20500",
+            "value": "zone-61",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-61",
+      "expected_evidence_ids": [
+        "recovery-011-b"
+      ]
+    },
+    {
+      "id": "recovery-012",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-18981? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-012",
+        "query_key": "asset-18981",
+        "evidence": [
+          {
+            "id": "recovery-012-a",
+            "key": "asset-18981",
+            "value": "zone-29",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-012-b",
+            "key": "asset-18981",
+            "value": "zone-54",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-54",
+      "expected_evidence_ids": [
+        "recovery-012-b"
+      ]
+    },
+    {
+      "id": "recovery-013",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-98501? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-013",
+        "query_key": "asset-98501",
+        "evidence": [
+          {
+            "id": "recovery-013-a",
+            "key": "asset-98501",
+            "value": "zone-37",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-013-b",
+            "key": "asset-98501",
+            "value": "zone-65",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-65",
+      "expected_evidence_ids": [
+        "recovery-013-b"
+      ]
+    },
+    {
+      "id": "recovery-014",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-62923? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-014",
+        "query_key": "asset-62923",
+        "evidence": [
+          {
+            "id": "recovery-014-a",
+            "key": "asset-62923",
+            "value": "zone-13",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-014-b",
+            "key": "asset-62923",
+            "value": "zone-86",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-86",
+      "expected_evidence_ids": [
+        "recovery-014-b"
+      ]
+    },
+    {
+      "id": "recovery-015",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-42271? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-015",
+        "query_key": "asset-42271",
+        "evidence": [
+          {
+            "id": "recovery-015-a",
+            "key": "asset-42271",
+            "value": "zone-28",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-015-b",
+            "key": "asset-42271",
+            "value": "zone-88",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-88",
+      "expected_evidence_ids": [
+        "recovery-015-b"
+      ]
+    },
+    {
+      "id": "recovery-016",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-15209? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-016",
+        "query_key": "asset-15209",
+        "evidence": [
+          {
+            "id": "recovery-016-a",
+            "key": "asset-15209",
+            "value": "zone-29",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-016-b",
+            "key": "asset-15209",
+            "value": "zone-55",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-55",
+      "expected_evidence_ids": [
+        "recovery-016-b"
+      ]
+    },
+    {
+      "id": "recovery-017",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-64948? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-017",
+        "query_key": "asset-64948",
+        "evidence": [
+          {
+            "id": "recovery-017-a",
+            "key": "asset-64948",
+            "value": "zone-31",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-017-b",
+            "key": "asset-64948",
+            "value": "zone-87",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-87",
+      "expected_evidence_ids": [
+        "recovery-017-b"
+      ]
+    },
+    {
+      "id": "recovery-018",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-84085? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-018",
+        "query_key": "asset-84085",
+        "evidence": [
+          {
+            "id": "recovery-018-a",
+            "key": "asset-84085",
+            "value": "zone-26",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-018-b",
+            "key": "asset-84085",
+            "value": "zone-70",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-70",
+      "expected_evidence_ids": [
+        "recovery-018-b"
+      ]
+    },
+    {
+      "id": "recovery-019",
+      "family": "recovery",
+      "split": "heldout",
+      "question": "What is the current supported zone for asset-44179? Abstain if unresolved.",
+      "input": {
+        "case_id": "recovery-019",
+        "query_key": "asset-44179",
+        "evidence": [
+          {
+            "id": "recovery-019-a",
+            "key": "asset-44179",
+            "value": "zone-16",
+            "revision": 1,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          },
+          {
+            "id": "recovery-019-b",
+            "key": "asset-44179",
+            "value": "zone-70",
+            "revision": 2,
+            "trusted": true,
+            "source": "seeded synthetic ledger"
+          }
+        ]
+      },
+      "expected_answer": "zone-70",
+      "expected_evidence_ids": [
+        "recovery-019-b"
+      ]
+    }
+  ]
+}

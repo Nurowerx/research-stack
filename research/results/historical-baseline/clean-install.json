@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "create-venv",
+      "exit_code": 0,
+      "seconds": 8.971
+    },
+    {
+      "name": "locked-python-install",
+      "exit_code": 0,
+      "seconds": 42.449
+    },
+    {
+      "name": "editable-source-install",
+      "exit_code": 0,
+      "seconds": 7.809
+    },
+    {
+      "name": "locked-npm-install",
+      "exit_code": 0,
+      "seconds": 8.422
+    },
+    {
+      "name": "python-tests",
+      "exit_code": 0,
+      "seconds": 5.093
+    },
+    {
+      "name": "chart-data-tests",
+      "exit_code": 0,
+      "seconds": 1.116
+    },
+    {
+      "name": "production-build",
+      "exit_code": 0,
+      "seconds": 6.658
+    },
+    {
+      "name": "database-migration",
+      "exit_code": 0,
+      "seconds": 1.025
+    },
+    {
+      "name": "fixture-seed",
+      "exit_code": 0,
+      "seconds": 2.501
+    },
+    {
+      "name": "browser-runtime-install",
+      "exit_code": 0,
+      "seconds": 1.512
+    },
+    {
+      "name": "production-service-ready",
+      "exit_code": 0
+    },
+    {
+      "name": "browser-workflow-accessibility-mobile",
+      "exit_code": 0,
+      "seconds": 16.252
+    },
+    {
+      "name": "vite-frontend-and-proxy-ready",
+      "exit_code": 0
+    },
+    {
+      "name": "semantic-reproduction",
+      "exit_code": 0,
+      "seconds": 2.47
+    },
+    {
+      "name": "python-version",
+      "exit_code": 0,
+      "seconds": 0.073
+    },
+    {
+      "name": "node-version",
+      "exit_code": 0,
+      "seconds": 0.051
+    }
+  ],
+  "duration_seconds": 107.31,
+  "platform": "win32",
+  "python": "Python 3.11.9",
+  "node": "v24.20.0",
+  "reproduction": {
+    "matched": true,
+    "expected": "237c0a705f41edd0fed470db054237505c9359ec1884a3049a23a4178b00c464",
+    "actual": "237c0a705f41edd0fed470db054237505c9359ec1884a3049a23a4178b00c464",
+    "scope": "Semantic results only; latency, IDs and timestamps vary."
+  },
+  "browser": {
+    "startTime": "2026-11-02T20:29:21.057Z",
+    "duration": 15334.039,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "Fresh copied source, new virtual environment, locked installs, new database, production and Vite startup, real browser workflow; public dependency caches may be reused."
+}

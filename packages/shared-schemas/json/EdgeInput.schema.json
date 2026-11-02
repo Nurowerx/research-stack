@@ -1,0 +1,66 @@
+{
+  "$defs": {
+    "Relation": {
+      "enum": [
+        "derived_from",
+        "generated_by",
+        "evaluated_against",
+        "supported_by",
+        "contradicted_by",
+        "depends_on",
+        "reviewed_by",
+        "corrected_by",
+        "supersedes",
+        "associated_with",
+        "belongs_to_experiment"
+      ],
+      "title": "Relation",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "target_id": {
+      "title": "Target Id",
+      "type": "string"
+    },
+    "relation": {
+      "$ref": "#/$defs/Relation"
+    },
+    "rationale": {
+      "default": "",
+      "maxLength": 2000,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "assessment": {
+      "default": "structural",
+      "enum": [
+        "citation_only",
+        "fixture_oracle",
+        "human_judgment",
+        "structural"
+      ],
+      "title": "Assessment",
+      "type": "string"
+    },
+    "actor": {
+      "default": "Local researcher",
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Actor",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_id",
+    "target_id",
+    "relation"
+  ],
+  "title": "EdgeInput",
+  "type": "object"
+}
