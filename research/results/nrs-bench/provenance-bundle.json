@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "records": [
+    {
+      "id": "04d8441a-9ae2-4647-a53e-b256d86cb2eb",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "04d8441a-9ae2-4647-a53e-b256d86cb2eb",
+      "version": 1,
+      "kind": "algorithm",
+      "label": "algorithm",
+      "payload": {
+        "origin": "NRS synthetic graph",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "statement": "Synthetic claim"
+      },
+      "content_hash": "719a99e3505b64ec6e8270de134dd8c5d70cb61696a00cf5dd720341a1f11253",
+      "actor": "Local researcher",
+      "created": 1793653156.9534662
+    },
+    {
+      "id": "3c0e0472-0e5e-41bf-a0b6-b16b36aebd1a",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "3c0e0472-0e5e-41bf-a0b6-b16b36aebd1a",
+      "version": 1,
+      "kind": "claim",
+      "label": "claim",
+      "payload": {
+        "origin": "NRS synthetic graph",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "statement": "Synthetic claim"
+      },
+      "content_hash": "701db916e84d6f8c7eff9d9b33d5ea7095b417ebddd924e8365689e220a4bb87",
+      "actor": "Local researcher",
+      "created": 1793653156.9584653
+    },
+    {
+      "id": "70b43a70-1236-49b6-b172-d719838547db",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "70b43a70-1236-49b6-b172-d719838547db",
+      "version": 1,
+      "kind": "output",
+      "label": "output",
+      "payload": {
+        "origin": "NRS synthetic graph",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "statement": "Synthetic claim"
+      },
+      "content_hash": "cd19cb453de410baa258e88d529f471d0606cbce7460fc4096d70900ce0c783d",
+      "actor": "Local researcher",
+      "created": 1793653156.9564657
+    },
+    {
+      "id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "version": 1,
+      "kind": "research_project",
+      "label": "Known-answer graph",
+      "payload": {
+        "description": "Local research workspace"
+      },
+      "content_hash": "480b75a0b3071af778d00917060ff6716103660f449a5939086ab0dd0fadccb8",
+      "actor": "Local researcher",
+      "created": 1793653156.9484653
+    },
+    {
+      "id": "b82e2064-31a0-4463-a454-c57022b756f6",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "b82e2064-31a0-4463-a454-c57022b756f6",
+      "version": 1,
+      "kind": "execution",
+      "label": "execution",
+      "payload": {
+        "origin": "NRS synthetic graph",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "statement": "Synthetic claim"
+      },
+      "content_hash": "6f26ec6866714abaa7503ba426ebc32e5730801bc2250cb666b9ccbe3a51eebe",
+      "actor": "Local researcher",
+      "created": 1793653156.9544666
+    },
+    {
+      "id": "cc3b961d-9da3-4193-ad1b-551bf6bfbe0e",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "cc3b961d-9da3-4193-ad1b-551bf6bfbe0e",
+      "version": 1,
+      "kind": "evidence",
+      "label": "evidence",
+      "payload": {
+        "origin": "NRS synthetic graph",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "statement": "Synthetic claim"
+      },
+      "content_hash": "ef0bf965bcca187925a44aa8da0a7ab840dcadc5ecb4e8eaf10887808eb71e9d",
+      "actor": "Local researcher",
+      "created": 1793653156.9574656
+    },
+    {
+      "id": "fbcfa6ac-1836-4f60-a409-aafae9e5abae",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "fbcfa6ac-1836-4f60-a409-aafae9e5abae",
+      "version": 1,
+      "kind": "dataset_version",
+      "label": "dataset",
+      "payload": {
+        "origin": "NRS synthetic graph",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "statement": "Synthetic claim"
+      },
+      "content_hash": "10bcc19dbc6cb8176e8c7718bdbbdc147676c60e9495feed5c2cf43a6a7d0749",
+      "actor": "Local researcher",
+      "created": 1793653156.9524662
+    },
+    {
+      "id": "fc4a3d2e-d420-48d4-a3d7-ab99fce5916e",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "logical_id": "fc4a3d2e-d420-48d4-a3d7-ab99fce5916e",
+      "version": 1,
+      "kind": "data_source",
+      "label": "source",
+      "payload": {
+        "origin": "NRS synthetic graph",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "statement": "Synthetic claim"
+      },
+      "content_hash": "42f60a6f22e194b47494ecd5b1ba876207b732fdba8d4167c74a0c4692128e0f",
+      "actor": "Local researcher",
+      "created": 1793653156.9504654
+    }
+  ],
+  "edges": [
+    {
+      "id": "2a1a339b-53ce-4322-ba53-dce73673a515",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "source_id": "b82e2064-31a0-4463-a454-c57022b756f6",
+      "target_id": "04d8441a-9ae2-4647-a53e-b256d86cb2eb",
+      "relation": "depends_on",
+      "rationale": "",
+      "assessment": "fixture_oracle",
+      "actor": "Local researcher",
+      "created": 1793653156.9644656,
+      "content_hash": "4b3de87db710370740fd79ae1ebcd5400fbfa79137d7c952c7104705626fdffd"
+    },
+    {
+      "id": "2e1b62af-8b6a-413c-b8d1-55623fe025e4",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "source_id": "70b43a70-1236-49b6-b172-d719838547db",
+      "target_id": "b82e2064-31a0-4463-a454-c57022b756f6",
+      "relation": "generated_by",
+      "rationale": "",
+      "assessment": "fixture_oracle",
+      "actor": "Local researcher",
+      "created": 1793653156.966466,
+      "content_hash": "ffaebe56fb05342808da75b9b1e53faff22a798123859f20396755740feab4b0"
+    },
+    {
+      "id": "33af853e-e69b-4055-b009-89a5961e96fc",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "source_id": "b82e2064-31a0-4463-a454-c57022b756f6",
+      "target_id": "fbcfa6ac-1836-4f60-a409-aafae9e5abae",
+      "relation": "evaluated_against",
+      "rationale": "",
+      "assessment": "fixture_oracle",
+      "actor": "Local researcher",
+      "created": 1793653156.9624655,
+      "content_hash": "426f157d713a30b6b7e7421bfaa3a6990af231047d5f7393cb1a2b9aaa91620c"
+    },
+    {
+      "id": "4887f529-44ae-4537-993f-bbae72fe5d04",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "source_id": "cc3b961d-9da3-4193-ad1b-551bf6bfbe0e",
+      "target_id": "70b43a70-1236-49b6-b172-d719838547db",
+      "relation": "derived_from",
+      "rationale": "",
+      "assessment": "fixture_oracle",
+      "actor": "Local researcher",
+      "created": 1793653156.9684663,
+      "content_hash": "ba1080e4c74151449b0694303f2ef486d53c444779190346f4c217a8fa45ef32"
+    },
+    {
+      "id": "833884a2-c4b6-4ba3-b1ba-d3f8f6eea1b0",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "source_id": "fbcfa6ac-1836-4f60-a409-aafae9e5abae",
+      "target_id": "fc4a3d2e-d420-48d4-a3d7-ab99fce5916e",
+      "relation": "derived_from",
+      "rationale": "",
+      "assessment": "fixture_oracle",
+      "actor": "Local researcher",
+      "created": 1793653156.960466,
+      "content_hash": "c6270472d496c03dd45d0887c0ce06fe0f5c1472be1543e34d9ec69505e4f1c3"
+    },
+    {
+      "id": "abbed367-195c-4085-86ef-2dff4cd129a1",
+      "project_id": "843af53d-2857-43ec-b1d9-dd0097dc0e1c",
+      "source_id": "3c0e0472-0e5e-41bf-a0b6-b16b36aebd1a",
+      "target_id": "cc3b961d-9da3-4193-ad1b-551bf6bfbe0e",
+      "relation": "supported_by",
+      "rationale": "",
+      "assessment": "fixture_oracle",
+      "actor": "Local researcher",
+      "created": 1793653156.970465,
+      "content_hash": "d92b835cdcc00aedc7d6a741cc83c4f279dded5418d954393e92b3e8e69acbbb"
+    }
+  ]
+}
