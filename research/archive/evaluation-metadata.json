@@ -1,7 +1,7 @@
 {
   "title": "Evaluating an Evidence-Centered Research Software Stack: Provenance Integrity, Reproducibility, Correction Workflows, and Visualization Fidelity",
   "upload_type": "publication",
-  "description": "Evidence provenance, deterministic evaluation, scientific visualization and human review through TRACE, LOOP, LENS and FRAME.",
+  "description": "We evaluate NRS 0.1.0 using known-answer synthetic fixtures, deliberate faults, paired correction comparisons and automated browser workflows. Three prespecified seeds generate 120 cases each, with 60 development and 60 heldout instances. Across 18 recorded executions, first-match achieves 10/60 correct development cases per seed, evidence-aware achieves 60/60, and a reviewed prefer-latest configuration achieves 30/60. The selected affected case achieves 1/1 and is reported separately. A fresh Windows installation passes 54 automated tests and reproduces the committed report digest. These observations establish bounded implementation behavior; they do not estimate real-world predictive performance or human-user outcomes. Technical report, not peer reviewed.",
   "creators": [
     {
       "name": "Walker, Spencer H.",
@@ -10,7 +10,7 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "0.1.0",
+  "version": "1.0",
   "keywords": [
     "provenance",
     "research software",
