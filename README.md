@@ -67,3 +67,7 @@ This release does not establish human-user outcomes, general AI reliability, cry
 Cite Spencer H. Walker, *Nurowerx Research Stack*, version 0.1.0, Nurowerx, 2026, https://github.com/Nurowerx/research-stack. Machine-readable metadata is in [CITATION.cff](CITATION.cff) and [codemeta.json](codemeta.json). No DOI is claimed until one is issued and verified; archival metadata and the outstanding access step are in [research/archive](research/archive/README.md).
 
 Software: **MIT**. Original datasets and papers: **CC BY 4.0**. Third-party dependencies retain their own licenses. [Contributing](CONTRIBUTING.md) · [Governance](GOVERNANCE.md) · [Documentation index](docs/README.md).
+
+## Read-only demonstration
+
+The [static demonstration](https://nurowerx.github.io/research-stack/) presents recorded synthetic experiment results with seed selection and links to raw reports. It does not run the complete backend. [Container instructions](docs/installation/README.md#container) support local use of the full application.

@@ -1,0 +1,85 @@
+{
+  "$defs": {
+    "ResidencyRow": {
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "title": "Case Id",
+          "type": "string"
+        },
+        "strategy": {
+          "title": "Strategy",
+          "type": "string"
+        },
+        "memory_budget_mb": {
+          "exclusiveMinimum": 0,
+          "title": "Memory Budget Mb",
+          "type": "number"
+        },
+        "resident_experts": {
+          "minimum": 0,
+          "title": "Resident Experts",
+          "type": "integer"
+        },
+        "latency_ms": {
+          "minimum": 0,
+          "title": "Latency Ms",
+          "type": "number"
+        },
+        "peak_memory_mb": {
+          "minimum": 0,
+          "title": "Peak Memory Mb",
+          "type": "number"
+        },
+        "output_match": {
+          "title": "Output Match",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "case_id",
+        "strategy",
+        "memory_budget_mb",
+        "resident_experts",
+        "latency_ms",
+        "peak_memory_mb",
+        "output_match"
+      ],
+      "title": "ResidencyRow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "nx-residency-fixture-1",
+      "default": "nx-residency-fixture-1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "representative_fixture": {
+      "const": true,
+      "default": true,
+      "title": "Representative Fixture",
+      "type": "boolean"
+    },
+    "source_label": {
+      "default": "Representative synthetic Resident Model Lab contract; no live integration",
+      "title": "Source Label",
+      "type": "string"
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/ResidencyRow"
+      },
+      "minItems": 1,
+      "title": "Rows",
+      "type": "array"
+    }
+  },
+  "required": [
+    "rows"
+  ],
+  "title": "ResidencyExport",
+  "type": "object"
+}

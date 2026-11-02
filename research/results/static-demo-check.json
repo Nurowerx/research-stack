@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "six recorded runs",
+    "actual score",
+    "seed selection and source URL",
+    "390px no page overflow"
+  ],
+  "scope": "static exported-results demonstration, no live backend"
+}

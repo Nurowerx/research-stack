@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 
+from nx_adapters.exports import ResidencyExport
 from nx_loop import generate
 from nx_schema import Benchmark
 
@@ -131,6 +132,49 @@ def main():
     (ROOT / "datasets/manifest.json").write_text(
         json.dumps({"version": "1.0.0", "datasets": entries}, indent=2) + "\n",
         encoding="utf-8",
+    )
+    legacy = []
+    for filename, seed, generator, schema, description in (
+        (
+            "evidence-revision.json",
+            20261102,
+            "nx_loop.fixtures.generate",
+            "datasets/schema.json",
+            "Original 120-case demonstration; family ground truth follows the same generator.",
+        ),
+        (
+            "residency-contract-fixture.json",
+            None,
+            "nx_adapters.exports.residency_fixture",
+            "datasets/residency.schema.json",
+            "Three hand-specified synthetic contract rows; latency and memory are illustrative inputs, not measured RML results.",
+        ),
+    ):
+        path = ROOT / "datasets/synthetic" / filename
+        raw = path.read_text(encoding="utf-8").replace("\r\n", "\n").encode("utf-8")
+        path.write_bytes(raw)
+        legacy.append(
+            {
+                "dataset_id": "nrs-original/" + path.stem,
+                "version": "1.0.0",
+                "path": path.relative_to(ROOT).as_posix(),
+                "sha256": hashlib.sha256(raw).hexdigest(),
+                "seed": seed,
+                "origin": "original synthetic development fixture; not external research observations",
+                "generator": generator,
+                "schema": schema,
+                "description": description,
+                "license": "CC-BY-4.0",
+                "ground_truth": "explicit family expectations or representative contract values",
+                "protocol": "tests/test_adapters.py; tests/test_loop.py; original run_demo.py workflow",
+                "limitations": "No real-model or field-performance claim; preserve separately from executed research observations.",
+            }
+        )
+    (ROOT / "datasets/legacy-manifest.json").write_text(
+        json.dumps({"datasets": legacy}, indent=2) + "\n", encoding="utf-8"
+    )
+    (ROOT / "datasets/residency.schema.json").write_text(
+        json.dumps(ResidencyExport.model_json_schema(), indent=2) + "\n", encoding="utf-8"
     )
 
 
