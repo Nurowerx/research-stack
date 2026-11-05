@@ -1,0 +1,220 @@
+{
+  "code_commit": "827d231827587d64b9e19ac3c4d54b945131794f",
+  "suite": "NRS-Bench",
+  "version": "1.0.0",
+  "experiments": [
+    {
+      "seed": 13,
+      "runs": {
+        "first_match": {
+          "id": "69971f33-b457-4c1c-ad2b-20c740d95b57",
+          "accuracy": {
+            "value": 0.16666666666666666,
+            "numerator": 10,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "750c867be8aef67109e3e75cbec1eacff9ae1f2b47794bc79fa348f3fd2dd5a4"
+        },
+        "repeat": {
+          "id": "6d3d0de9-0745-442b-a7d6-90b85b811bfe",
+          "accuracy": {
+            "value": 0.16666666666666666,
+            "numerator": 10,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "750c867be8aef67109e3e75cbec1eacff9ae1f2b47794bc79fa348f3fd2dd5a4"
+        },
+        "evidence_aware": {
+          "id": "52ac4ab4-c6d9-438b-b173-8af7b92e93d7",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 60,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "259823a61cf5d1d548a0471c135078a8d6c87f2953ae4a8b0ddcf5ff52901d30"
+        },
+        "heldout": {
+          "id": "1bb08d31-a671-4eba-abec-a32d7622b556",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 60,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "1a37dfcb32af4fc0c13160cda6ab22682c21820d0873e5d2f51a79a8f52dc3b5"
+        },
+        "corrected_affected": {
+          "id": "c07cdceb-ed3b-4397-a690-da96f2984558",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 1,
+            "denominator": 1,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 1,
+          "digest": "7403396eb1a8871c1b3e8f09ae2bc6302c483e47e8fc3cb30a9d31a0ab017390"
+        },
+        "corrected_full": {
+          "id": "8c570b77-8e66-4dba-b910-de91c3bf1ab5",
+          "accuracy": {
+            "value": 0.5,
+            "numerator": 30,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "21986aea3b51003b9c87688e5db04530ff6c28ea43f677f4c78b360e0378e8bc"
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "runs": {
+        "first_match": {
+          "id": "16434920-5f96-4c41-b7fe-234fd8662e09",
+          "accuracy": {
+            "value": 0.16666666666666666,
+            "numerator": 10,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "56a72fbd09d5199778f5984161876350dab639c9eb00682e71db6d4fabf99916"
+        },
+        "repeat": {
+          "id": "05b40b2b-e071-41d4-8674-7044938e88e8",
+          "accuracy": {
+            "value": 0.16666666666666666,
+            "numerator": 10,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "56a72fbd09d5199778f5984161876350dab639c9eb00682e71db6d4fabf99916"
+        },
+        "evidence_aware": {
+          "id": "8aedc4a7-9ec2-4c68-8561-ad69d4bbec13",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 60,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "d63bb3319c2f56fb7d085489311f2de5632a23ae250bb2b51eee560f0e469666"
+        },
+        "heldout": {
+          "id": "e54edded-bdc8-4ce2-972d-ab90152ac5c7",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 60,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "4ca0b20fb1be0bf9dadfd652e6f5f3357279c61f1917314ebe71745737ce99df"
+        },
+        "corrected_affected": {
+          "id": "5c793cdf-8b92-48bd-9e93-ede35ee79931",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 1,
+            "denominator": 1,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 1,
+          "digest": "032a83fa0e7c6290775edf33e73c57d3e833dd5f3b88f045226aaf8353435321"
+        },
+        "corrected_full": {
+          "id": "b0fe74de-6783-4007-aa0d-d6abd7b3d2ae",
+          "accuracy": {
+            "value": 0.5,
+            "numerator": 30,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "854b013b8ed1ee56be9c267c51bfa02def389c2b392a7d6eaa6db4d42c798fb0"
+        }
+      }
+    },
+    {
+      "seed": 20261102,
+      "runs": {
+        "first_match": {
+          "id": "338ca423-dc76-474e-a5f3-ef1ed3f83130",
+          "accuracy": {
+            "value": 0.16666666666666666,
+            "numerator": 10,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "12a0b0eb1e42b76a4584fb246511d39de1096fe4bb4b6ef604d641ebda484162"
+        },
+        "repeat": {
+          "id": "676afbd8-65fe-4a6f-9e2f-799d988a78fc",
+          "accuracy": {
+            "value": 0.16666666666666666,
+            "numerator": 10,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "12a0b0eb1e42b76a4584fb246511d39de1096fe4bb4b6ef604d641ebda484162"
+        },
+        "evidence_aware": {
+          "id": "dc5a95c9-a265-4077-91c9-24092712cb8b",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 60,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "6fad4413b8bc6014ce1f83a53d3b59c5f9f9fc5b98059fb528e01db6609906e8"
+        },
+        "heldout": {
+          "id": "f8e96f01-dfec-42ec-8677-f3ee74ad5fda",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 60,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "b569d8d0ca74aafa8e0299618efa9fa59b1d755a4ae9ff507e24dfa20749693b"
+        },
+        "corrected_affected": {
+          "id": "bc21e2eb-2146-4d22-bdd2-ba2c1f67cc6f",
+          "accuracy": {
+            "value": 1.0,
+            "numerator": 1,
+            "denominator": 1,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 1,
+          "digest": "237c0a705f41edd0fed470db054237505c9359ec1884a3049a23a4178b00c464"
+        },
+        "corrected_full": {
+          "id": "ba0f79ad-2267-43e9-9c18-ab657680d3a0",
+          "accuracy": {
+            "value": 0.5,
+            "numerator": 30,
+            "denominator": 60,
+            "definition": "Exact answer match, including correct abstention, divided by all cases."
+          },
+          "cases": 60,
+          "digest": "a149b81d4f4b96df1ddb4cdd5421881081fe25fe13dd6edc13296680077a6fa8"
+        }
+      }
+    }
+  ]
+}

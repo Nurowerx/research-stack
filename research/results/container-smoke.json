@@ -1,0 +1,13 @@
+{
+  "port": 8878,
+  "frontend_status": 200,
+  "status": "passed",
+  "scope": "Linux container build, packaged migrations, seed, authenticated API read, static frontend; separate from browser suite",
+  "projects": 1,
+  "health": {
+    "status": "ok",
+    "version": "0.1.0",
+    "mode": "token access",
+    "synthetic_baseline": true
+  }
+}

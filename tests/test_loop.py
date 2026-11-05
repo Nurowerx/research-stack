@@ -133,8 +133,10 @@ def test_unknown_citation_cannot_pass_evidence_consistency():
     assert result["pairs"]["retrieval_precision"] == [0, 1]
 
 
-def test_invalid_benchmark_identities():
+def test_invalid_benchmark_identities_and_empty_dataset():
     data = generate(per_family=4).model_dump()
+    with pytest.raises(ValueError):
+        Benchmark.model_validate({**data, "cases": []})
     data["cases"][1] = copy.deepcopy(data["cases"][0])
     with pytest.raises(ValueError, match="Duplicate"):
         Benchmark.model_validate(data)

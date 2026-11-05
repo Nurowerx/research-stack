@@ -1,7 +1,7 @@
 {
   "title": "Nurowerx Research Systems: A Modular Architecture for Evidence Provenance, Computational Evaluation, Scientific Visualization, and Human Review",
   "upload_type": "publication",
-  "description": "Evidence provenance, deterministic evaluation, scientific visualization and human review through TRACE, LOOP, LENS and FRAME.",
+  "description": "Nurowerx Research Stack (NRS) is a local research application connecting typed provenance records, executed evaluations, scientific charts and attributed review. Four modules\u2014TRACE, LOOP, LENS and FRAME\u2014share version-specific identifiers and schemas. The resulting workflow preserves a dataset, execution configuration, output, assessment, correction and subsequent report without overwriting earlier evidence. This report describes the implemented architecture and its limits. Release validation comprises 35 backend, 12 visualization and 7 browser tests, together with 18 controlled evaluation executions across three synthetic seeds. The contribution is an inspectable integration and reproduction package. It does not establish real-world predictive validity, authenticated authorship or human-user benefit. Technical report, not peer reviewed.",
   "creators": [
     {
       "name": "Walker, Spencer H.",
@@ -10,7 +10,7 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "0.1.0",
+  "version": "1.0",
   "keywords": [
     "provenance",
     "research software",
