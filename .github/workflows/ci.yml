@@ -34,6 +34,8 @@ jobs:
           /tmp/nrs-wheel/bin/pip install dist/*.whl
           cd /tmp
           /tmp/nrs-wheel/bin/nx-stack --database sqlite:////tmp/nrs-wheel.sqlite init
+      - name: Smoke-test versioned release packaging
+        run: python scripts/package_release.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:

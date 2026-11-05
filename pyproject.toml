@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nurowerx-research-stack"
-version = "0.1.0"
+version = "0.1.1"
 description = "TRACE, LOOP, LENS and FRAME: a local, evidence-linked research workbench"
 requires-python = ">=3.11"
 license = "MIT"
