@@ -51,6 +51,10 @@ revision = subprocess.run(
 )
 if revision.returncode == 0:
     env["NX_SOURCE_COMMIT"] = revision.stdout.strip()
+    state = subprocess.run(
+        ["git", "status", "--porcelain"], cwd=root, capture_output=True, text=True, check=True
+    )
+    env["NX_SOURCE_DIRTY"] = "true" if state.stdout.strip() else "false"
 env["TEMP"] = env["TMP"] = str(destination / "temp")
 Path(env["TEMP"]).mkdir()
 env.setdefault("PIP_CACHE_DIR", str(destination / "pip-cache"))

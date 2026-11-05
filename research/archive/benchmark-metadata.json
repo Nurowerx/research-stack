@@ -1,7 +1,7 @@
 {
   "title": "NRS-Bench: A Reproducible Benchmark Suite for Evidence Provenance, Evaluation, Correction, and Research Workflows",
   "upload_type": "publication",
-  "description": "Evidence provenance, deterministic evaluation, scientific visualization and human review through TRACE, LOOP, LENS and FRAME.",
+  "description": "NRS-Bench 1.0.0 is a versioned collection of original synthetic fixtures and executable protocols for a research software stack. It covers provenance integrity, semantic repetition, correction and regression, numerical visualization, complete research workflows, robustness and interface integrity. Data manifests record origin, generation, schema, seed, hashes and limitations. The reference execution comprises three seeded evaluation datasets and 18 runs, accompanied by backend, chart and browser controls. This report specifies reuse and interpretation. NRS-Bench is a bounded software-validation suite, not a general leaderboard for AI intelligence or research quality. Technical report, not peer reviewed.",
   "creators": [
     {
       "name": "Walker, Spencer H.",
@@ -10,7 +10,7 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "0.1.0",
+  "version": "1.0",
   "keywords": [
     "provenance",
     "research software",

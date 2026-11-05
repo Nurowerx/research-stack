@@ -35,11 +35,18 @@ def write(path, obj):
 
 def execute(output):
     manifest = json.loads((ROOT / "datasets/manifest.json").read_text())
-    for dataset in manifest["datasets"]:
+    legacy = json.loads((ROOT / "datasets/legacy-manifest.json").read_text())
+    for dataset in manifest["datasets"] + legacy["datasets"]:
         assert (
             hashlib.sha256((ROOT / dataset["path"]).read_bytes()).hexdigest() == dataset["sha256"]
         )
     git = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True)
+    state = subprocess.run(
+        ["git", "status", "--porcelain"], cwd=ROOT, capture_output=True, text=True, check=False
+    )
+    source_dirty = os.environ.get("NX_SOURCE_DIRTY")
+    if source_dirty is None and state.returncode == 0:
+        source_dirty = "true" if state.stdout.strip() else "false"
     start = time.perf_counter()
     rows = []
     with tempfile.TemporaryDirectory(prefix="nrs-bench-") as folder:
@@ -191,6 +198,7 @@ def execute(output):
         "status": "passed",
         "code_commit": os.environ.get("NX_SOURCE_COMMIT")
         or (git.stdout.strip() if git.returncode == 0 else None),
+        "source_tree_dirty": None if source_dirty is None else source_dirty == "true",
         "environment": {
             "os": platform.platform(),
             "python": platform.python_version(),

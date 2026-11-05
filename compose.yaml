@@ -1,0 +1,12 @@
+services:
+  research-stack:
+    build: .
+    ports:
+      - "127.0.0.1:8876:8876"
+    environment:
+      NX_WRITER_TOKEN: ${NX_WRITER_TOKEN:?Set a local writer token}
+      NX_ALLOWED_HOSTS: 127.0.0.1,localhost
+    volumes:
+      - research-data:/data
+volumes:
+  research-data:

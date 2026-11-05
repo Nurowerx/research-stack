@@ -1,0 +1,34 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "nrs-original/evidence-revision",
+      "version": "1.0.0",
+      "path": "datasets/synthetic/evidence-revision.json",
+      "sha256": "81ad9b1eefa185701258fad76055c364a2fdaf71d0061bb6ccddaa82451ec7f0",
+      "seed": 20261102,
+      "origin": "original synthetic development fixture; not external research observations",
+      "generator": "nx_loop.fixtures.generate",
+      "schema": "datasets/schema.json",
+      "description": "Original 120-case demonstration; family ground truth follows the same generator.",
+      "license": "CC-BY-4.0",
+      "ground_truth": "explicit family expectations or representative contract values",
+      "protocol": "tests/test_adapters.py; tests/test_loop.py; original run_demo.py workflow",
+      "limitations": "No real-model or field-performance claim; preserve separately from executed research observations."
+    },
+    {
+      "dataset_id": "nrs-original/residency-contract-fixture",
+      "version": "1.0.0",
+      "path": "datasets/synthetic/residency-contract-fixture.json",
+      "sha256": "8f33d2957ec79fee5b6066c93541b3c99d8d7d728ec029fc4b2fab3ef2a8348c",
+      "seed": null,
+      "origin": "original synthetic development fixture; not external research observations",
+      "generator": "nx_adapters.exports.residency_fixture",
+      "schema": "datasets/residency.schema.json",
+      "description": "Three hand-specified synthetic contract rows; latency and memory are illustrative inputs, not measured RML results.",
+      "license": "CC-BY-4.0",
+      "ground_truth": "explicit family expectations or representative contract values",
+      "protocol": "tests/test_adapters.py; tests/test_loop.py; original run_demo.py workflow",
+      "limitations": "No real-model or field-performance claim; preserve separately from executed research observations."
+    }
+  ]
+}

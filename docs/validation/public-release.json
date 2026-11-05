@@ -1,0 +1,902 @@
+{
+  "repository": "https://github.com/Nurowerx/research-stack",
+  "visibility": "public",
+  "verified_candidate": "475b6cb1d141c65c33c86ada43f14f2af13ae88e",
+  "experiment_code_commit": "827d231827587d64b9e19ac3c4d54b945131794f",
+  "fresh_public_clone": {
+    "status": "passed",
+    "checks": [
+      {
+        "name": "create-venv",
+        "exit_code": 0,
+        "seconds": 8.407
+      },
+      {
+        "name": "locked-python-install",
+        "exit_code": 0,
+        "seconds": 42.401
+      },
+      {
+        "name": "editable-source-install",
+        "exit_code": 0,
+        "seconds": 8.305
+      },
+      {
+        "name": "locked-npm-install",
+        "exit_code": 0,
+        "seconds": 8.879
+      },
+      {
+        "name": "python-tests",
+        "exit_code": 0,
+        "seconds": 6.907
+      },
+      {
+        "name": "chart-data-tests",
+        "exit_code": 0,
+        "seconds": 2.136
+      },
+      {
+        "name": "nrs-bench",
+        "exit_code": 0,
+        "seconds": 19.122
+      },
+      {
+        "name": "production-build",
+        "exit_code": 0,
+        "seconds": 6.846
+      },
+      {
+        "name": "database-migration",
+        "exit_code": 0,
+        "seconds": 0.965
+      },
+      {
+        "name": "fixture-seed",
+        "exit_code": 0,
+        "seconds": 2.521
+      },
+      {
+        "name": "browser-runtime-install",
+        "exit_code": 0,
+        "seconds": 1.663
+      },
+      {
+        "name": "production-service-ready",
+        "exit_code": 0
+      },
+      {
+        "name": "browser-workflow-accessibility-mobile",
+        "exit_code": 0,
+        "seconds": 18.539
+      },
+      {
+        "name": "vite-frontend-and-proxy-ready",
+        "exit_code": 0
+      },
+      {
+        "name": "semantic-reproduction",
+        "exit_code": 0,
+        "seconds": 2.444
+      },
+      {
+        "name": "python-version",
+        "exit_code": 0,
+        "seconds": 0.024
+      },
+      {
+        "name": "node-version",
+        "exit_code": 0,
+        "seconds": 0.046
+      }
+    ],
+    "duration_seconds": 132.1,
+    "platform": "win32",
+    "python": "Python 3.11.9",
+    "node": "v24.20.0",
+    "reproduction": {
+      "matched": true,
+      "expected": "237c0a705f41edd0fed470db054237505c9359ec1884a3049a23a4178b00c464",
+      "actual": "237c0a705f41edd0fed470db054237505c9359ec1884a3049a23a4178b00c464",
+      "scope": "Semantic results only; latency, IDs and timestamps vary."
+    },
+    "browser": {
+      "startTime": "2026-11-02T21:02:10.360Z",
+      "duration": 17571.558,
+      "expected": 7,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "scope": "Fresh copied source, new virtual environment, locked installs, new database, production and Vite startup, real browser workflow; public dependency caches may be reused."
+  },
+  "workflows": [
+    {
+      "conclusion": "success",
+      "databaseId": 41524280299,
+      "headSha": "475b6cb1d141c65c33c86ada43f14f2af13ae88e",
+      "jobs": [
+        {
+          "completedAt": "2026-11-02T21:01:08Z",
+          "conclusion": "success",
+          "databaseId": 125547909203,
+          "name": "validate",
+          "startedAt": "2026-11-02T21:00:03Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-02T21:00:04Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-02T21:00:04Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:05Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 2,
+              "startedAt": "2026-11-02T21:00:04Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:05Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 3,
+              "startedAt": "2026-11-02T21:00:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:06Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 4,
+              "startedAt": "2026-11-02T21:00:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:21Z",
+              "conclusion": "success",
+              "name": "Run python -m pip install -r requirements-lock.txt pytest-cov==7.1.0 build==1.6.1",
+              "number": 5,
+              "startedAt": "2026-11-02T21:00:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:23Z",
+              "conclusion": "success",
+              "name": "Run python -m pip install -e . --no-deps",
+              "number": 6,
+              "startedAt": "2026-11-02T21:00:21Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:28Z",
+              "conclusion": "success",
+              "name": "Run npm ci",
+              "number": 7,
+              "startedAt": "2026-11-02T21:00:23Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:28Z",
+              "conclusion": "success",
+              "name": "Run python -m ruff check .",
+              "number": 8,
+              "startedAt": "2026-11-02T21:00:28Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:28Z",
+              "conclusion": "success",
+              "name": "Run python -m ruff format --check .",
+              "number": 9,
+              "startedAt": "2026-11-02T21:00:28Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:29Z",
+              "conclusion": "success",
+              "name": "Run npm run format:check",
+              "number": 10,
+              "startedAt": "2026-11-02T21:00:28Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:33Z",
+              "conclusion": "success",
+              "name": "Run npm run check",
+              "number": 11,
+              "startedAt": "2026-11-02T21:00:29Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:42Z",
+              "conclusion": "success",
+              "name": "Run python -m pytest -q --cov --cov-report=xml --junitxml=python-tests.xml",
+              "number": 12,
+              "startedAt": "2026-11-02T21:00:33Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:43Z",
+              "conclusion": "success",
+              "name": "Run npm test -- --reporter=json --outputFile=frontend-tests.json",
+              "number": 13,
+              "startedAt": "2026-11-02T21:00:42Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:50Z",
+              "conclusion": "success",
+              "name": "Run npm run build",
+              "number": 14,
+              "startedAt": "2026-11-02T21:00:43Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:53Z",
+              "conclusion": "success",
+              "name": "Run python -m build",
+              "number": 15,
+              "startedAt": "2026-11-02T21:00:50Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:05Z",
+              "conclusion": "success",
+              "name": "Verify wheel migrations outside source",
+              "number": 16,
+              "startedAt": "2026-11-02T21:00:53Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:06Z",
+              "conclusion": "success",
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "number": 17,
+              "startedAt": "2026-11-02T21:01:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:06Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 32,
+              "startedAt": "2026-11-02T21:01:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:06Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 33,
+              "startedAt": "2026-11-02T21:01:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:06Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 34,
+              "startedAt": "2026-11-02T21:01:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:06Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 35,
+              "startedAt": "2026-11-02T21:01:06Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280299/job/125547909203"
+        }
+      ],
+      "name": "CI",
+      "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280299"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41524280576,
+      "headSha": "475b6cb1d141c65c33c86ada43f14f2af13ae88e",
+      "jobs": [
+        {
+          "completedAt": "2026-11-02T21:00:56Z",
+          "conclusion": "success",
+          "databaseId": 125547909252,
+          "name": "scans",
+          "startedAt": "2026-11-02T21:00:05Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-02T21:00:06Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-02T21:00:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:09Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 2,
+              "startedAt": "2026-11-02T21:00:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:09Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 3,
+              "startedAt": "2026-11-02T21:00:09Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:10Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 4,
+              "startedAt": "2026-11-02T21:00:09Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:16Z",
+              "conclusion": "success",
+              "name": "Run python -m pip install pip-audit==2.10.1 bandit==1.9.4",
+              "number": 5,
+              "startedAt": "2026-11-02T21:00:10Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:17Z",
+              "conclusion": "success",
+              "name": "Run pip-audit -r requirements-lock.txt --disable-pip --no-deps --format json --output pip-audit.json",
+              "number": 6,
+              "startedAt": "2026-11-02T21:00:16Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:21Z",
+              "conclusion": "success",
+              "name": "Run npm ci && npm audit --audit-level=low --json > npm-audit.json",
+              "number": 7,
+              "startedAt": "2026-11-02T21:00:17Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:22Z",
+              "conclusion": "success",
+              "name": "Run bandit -r packages services -f json -o bandit.json",
+              "number": 8,
+              "startedAt": "2026-11-02T21:00:21Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:26Z",
+              "conclusion": "success",
+              "name": "Run python scripts/security_tools.py",
+              "number": 9,
+              "startedAt": "2026-11-02T21:00:22Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:27Z",
+              "conclusion": "success",
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "number": 10,
+              "startedAt": "2026-11-02T21:00:26Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:28Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 18,
+              "startedAt": "2026-11-02T21:00:27Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:28Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 19,
+              "startedAt": "2026-11-02T21:00:28Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:28Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 20,
+              "startedAt": "2026-11-02T21:00:28Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:28Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 21,
+              "startedAt": "2026-11-02T21:00:28Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280576/job/125547909252"
+        },
+        {
+          "completedAt": "2026-11-02T21:01:53Z",
+          "conclusion": "success",
+          "databaseId": 125547909591,
+          "name": "codeql (python)",
+          "startedAt": "2026-11-02T21:00:03Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-02T21:00:05Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-02T21:00:04Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:06Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 2,
+              "startedAt": "2026-11-02T21:00:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:14Z",
+              "conclusion": "success",
+              "name": "Run github/codeql-action/init@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 3,
+              "startedAt": "2026-11-02T21:00:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:44Z",
+              "conclusion": "success",
+              "name": "Run github/codeql-action/analyze@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 4,
+              "startedAt": "2026-11-02T21:00:14Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:44Z",
+              "conclusion": "success",
+              "name": "Post Run github/codeql-action/analyze@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 6,
+              "startedAt": "2026-11-02T21:00:44Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:45Z",
+              "conclusion": "success",
+              "name": "Post Run github/codeql-action/init@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 7,
+              "startedAt": "2026-11-02T21:00:44Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:45Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 8,
+              "startedAt": "2026-11-02T21:00:45Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:45Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 9,
+              "startedAt": "2026-11-02T21:00:45Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280576/job/125547909591"
+        },
+        {
+          "completedAt": "2026-11-02T21:01:34Z",
+          "conclusion": "success",
+          "databaseId": 125547909680,
+          "name": "codeql (javascript-typescript)",
+          "startedAt": "2026-11-02T21:00:03Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-02T21:00:05Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-02T21:00:04Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:06Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 2,
+              "startedAt": "2026-11-02T21:00:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:21Z",
+              "conclusion": "success",
+              "name": "Run github/codeql-action/init@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 3,
+              "startedAt": "2026-11-02T21:00:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:21Z",
+              "conclusion": "success",
+              "name": "Run github/codeql-action/analyze@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 4,
+              "startedAt": "2026-11-02T21:00:21Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:21Z",
+              "conclusion": "success",
+              "name": "Post Run github/codeql-action/analyze@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 6,
+              "startedAt": "2026-11-02T21:01:21Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:22Z",
+              "conclusion": "success",
+              "name": "Post Run github/codeql-action/init@793b778da9c9275a0f276522b27cb5fc14bba279",
+              "number": 7,
+              "startedAt": "2026-11-02T21:01:21Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:22Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 8,
+              "startedAt": "2026-11-02T21:01:22Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:22Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 9,
+              "startedAt": "2026-11-02T21:01:22Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280576/job/125547909680"
+        }
+      ],
+      "name": "Security",
+      "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280576"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41524280703,
+      "headSha": "475b6cb1d141c65c33c86ada43f14f2af13ae88e",
+      "jobs": [
+        {
+          "completedAt": "2026-11-02T21:05:35Z",
+          "conclusion": "success",
+          "databaseId": 125547910228,
+          "name": "fresh-install (windows-latest)",
+          "startedAt": "2026-11-02T21:00:58Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-02T21:00:59Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-02T21:00:58Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:04Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 2,
+              "startedAt": "2026-11-02T21:00:59Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:04Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 3,
+              "startedAt": "2026-11-02T21:01:04Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:10Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 4,
+              "startedAt": "2026-11-02T21:01:04Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:10Z",
+              "conclusion": "skipped",
+              "name": "Linux browser libraries",
+              "number": 5,
+              "startedAt": "2026-11-02T21:01:10Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:02:41Z",
+              "conclusion": "success",
+              "name": "Fresh install and complete reproduction",
+              "number": 6,
+              "startedAt": "2026-11-02T21:01:10Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:02:42Z",
+              "conclusion": "success",
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "number": 7,
+              "startedAt": "2026-11-02T21:02:41Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:02:43Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 12,
+              "startedAt": "2026-11-02T21:02:42Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:02:43Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 13,
+              "startedAt": "2026-11-02T21:02:43Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:02:44Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 14,
+              "startedAt": "2026-11-02T21:02:43Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:02:44Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 15,
+              "startedAt": "2026-11-02T21:02:44Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280703/job/125547910228"
+        },
+        {
+          "completedAt": "2026-11-02T21:01:57Z",
+          "conclusion": "success",
+          "databaseId": 125547910389,
+          "name": "fresh-install (ubuntu-latest)",
+          "startedAt": "2026-11-02T21:00:03Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-02T21:00:05Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-02T21:00:04Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:05Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 2,
+              "startedAt": "2026-11-02T21:00:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:06Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 3,
+              "startedAt": "2026-11-02T21:00:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:06Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 4,
+              "startedAt": "2026-11-02T21:00:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:00:21Z",
+              "conclusion": "success",
+              "name": "Linux browser libraries",
+              "number": 5,
+              "startedAt": "2026-11-02T21:00:06Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:47Z",
+              "conclusion": "success",
+              "name": "Fresh install and complete reproduction",
+              "number": 6,
+              "startedAt": "2026-11-02T21:00:21Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:48Z",
+              "conclusion": "success",
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "number": 7,
+              "startedAt": "2026-11-02T21:01:47Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:48Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 12,
+              "startedAt": "2026-11-02T21:01:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:48Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 13,
+              "startedAt": "2026-11-02T21:01:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:48Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 14,
+              "startedAt": "2026-11-02T21:01:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:48Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 15,
+              "startedAt": "2026-11-02T21:01:48Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280703/job/125547910389"
+        },
+        {
+          "completedAt": "2026-11-02T21:03:45Z",
+          "conclusion": "success",
+          "databaseId": 125547910464,
+          "name": "fresh-install (macos-latest)",
+          "startedAt": "2026-11-02T21:01:10Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-02T21:01:12Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-02T21:01:11Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:14Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 2,
+              "startedAt": "2026-11-02T21:01:12Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:15Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 3,
+              "startedAt": "2026-11-02T21:01:14Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:16Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 4,
+              "startedAt": "2026-11-02T21:01:15Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:01:16Z",
+              "conclusion": "skipped",
+              "name": "Linux browser libraries",
+              "number": 5,
+              "startedAt": "2026-11-02T21:01:16Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:03:05Z",
+              "conclusion": "success",
+              "name": "Fresh install and complete reproduction",
+              "number": 6,
+              "startedAt": "2026-11-02T21:01:16Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:03:08Z",
+              "conclusion": "success",
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "number": 7,
+              "startedAt": "2026-11-02T21:03:05Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:03:08Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+              "number": 12,
+              "startedAt": "2026-11-02T21:03:08Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:03:08Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 13,
+              "startedAt": "2026-11-02T21:03:08Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:03:09Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "number": 14,
+              "startedAt": "2026-11-02T21:03:08Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-02T21:03:11Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 15,
+              "startedAt": "2026-11-02T21:03:09Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280703/job/125547910464"
+        }
+      ],
+      "name": "Reproducibility",
+      "url": "https://github.com/Nurowerx/research-stack/actions/runs/41524280703"
+    }
+  ],
+  "security_features": [
+    "Dependabot alerts",
+    "Dependabot security updates",
+    "private vulnerability reporting",
+    "secret scanning",
+    "push protection"
+  ],
+  "open_codeql_alerts_at_check": 0,
+  "open_secret_alerts_at_check": 0,
+  "subsequent_changes": "Adds pinned container packaging and static exported-results demonstration, documents clone/CI evidence and grants actions:read to the release gate. Final tag creation is contingent on a new successful CI/Security/Reproducibility run at the exact release commit. See the immutable GitHub release and its workflow for final status.",
+  "doi_status": "Not issued; automation runtime initialization failed before Zenodo navigation. Metadata prepared separately for software, dataset and each report."
+}

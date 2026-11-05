@@ -13,3 +13,9 @@ Seven actual screenshots in docs/screenshots cover the workspace/LENS view, TRAC
 Local path prefixes in published raw logs were replaced with <release-workspace> and <user-home>; numeric results, assertions and error messages are otherwise retained. Original unsanitized development logs remain outside the public repository. CI artifacts provide additional fresh-machine evidence and retain their runner paths.
 
 CI results and the fresh remote-clone verification are recorded in public-release.json after execution. No independent-party reproduction is claimed.
+
+## Public candidate verification
+
+The public candidate `475b6cb1d141c65c33c86ada43f14f2af13ae88e` passed CI, Security (dependency scans, Bandit, Gitleaks, actionlint and both CodeQL languages), and full clean reproduction on Linux, Windows and macOS. Exact job URLs are in public-release.json. A fresh HTTPS clone from GitHub also passed the complete 54-test workflow locally and reproduced the reference digest; logs are in research/results/public-clone. This is developer-controlled reproduction, not an independent-party claim.
+
+The optional Linux container passed build/startup/authenticated-read checks. The static demonstration passed source-score, seed-selection and mobile-overflow checks. These are separately scoped checks rather than additions to the 54-test suite. The release gate requires a new successful CI/Security/Reproducibility run after the final packaging/documentation changes.

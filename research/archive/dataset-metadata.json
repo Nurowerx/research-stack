@@ -1,7 +1,7 @@
 {
   "title": "NRS-Bench synthetic datasets 1.0.0",
   "upload_type": "dataset",
-  "description": "Evidence provenance, deterministic evaluation, scientific visualization and human review through TRACE, LOOP, LENS and FRAME.",
+  "description": "Original NRS-Bench 1.0.0 synthetic fixtures: three seeded 120-case evaluation datasets, a known-answer provenance graph, visualization fixtures and separately documented original contract examples. Includes schemas, hashes, generation methods, ground truth and reuse limits. No external enterprise dataset or human data is included.",
   "creators": [
     {
       "name": "Walker, Spencer H.",
@@ -10,7 +10,7 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "provenance",
     "research software",
