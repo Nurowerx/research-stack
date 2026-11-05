@@ -320,9 +320,18 @@ test("Capture actual interface screenshots", async ({ page }) => {
   await page
     .getByLabel("Research project")
     .selectOption({ label: "Evidence under revision" });
-  await page
-    .getByRole("button", { name: "Inspect conflict-000 repeat 1" })
-    .click();
+  // Select the seeded baseline explicitly instead of racing default selection.
+  const evaluation = page.getByLabel("Active evaluation");
+  const baseline = evaluation.locator("option").filter({
+    hasText: /^first-match \/ development \/ [^/]+ \/ complete$/,
+  });
+  await expect(baseline).toHaveCount(1);
+  await evaluation.selectOption({ label: await baseline.innerText() });
+  const conflict = page.getByRole("button", {
+    name: "Inspect conflict-000 repeat 1",
+  });
+  await expect(conflict).toBeVisible();
+  await conflict.click();
   await page.waitForTimeout(500);
   await page.screenshot({
     path: `${dir}/research-overview.png`,
