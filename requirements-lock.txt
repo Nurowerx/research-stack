@@ -24,7 +24,7 @@ Pygments==2.21.0
 pytest==9.2.0
 ruff==0.17.4
 scipy==1.17.1
-SQLAlchemy==2.1.6
+SQLAlchemy==2.1.8
 starlette==1.10.0
 typing-inspection==0.4.5
 typing_extensions==4.16.0
