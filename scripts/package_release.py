@@ -26,6 +26,16 @@ def version_tag(root):
     return version, tag
 
 
+def version_changed(root, before):
+    current, _ = version_tag(root)
+    if before and set(before) == {"0"}:
+        return True
+    previous = subprocess.check_output(
+        ["git", "show", f"{before}:pyproject.toml"], cwd=root, text=True
+    )
+    return current != tomllib.loads(previous)["project"]["version"]
+
+
 def archive_folder(source, destination, relative_to):
     with zipfile.ZipFile(destination, "w", zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(source.rglob("*")):
@@ -107,8 +117,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--check", action="store_true", help="Validate version/tag without packaging"
     )
+    parser.add_argument(
+        "--changed-since", help="Print whether the package version differs from this commit"
+    )
     args = parser.parse_args()
-    if args.check:
+    if args.changed_since is not None:
+        print(str(version_changed(ROOT, args.changed_since)).lower())
+    elif args.check:
         print(version_tag(ROOT)[1])
     else:
         package(ROOT, args.github_evidence)
