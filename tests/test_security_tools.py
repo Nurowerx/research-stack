@@ -3,6 +3,7 @@
 import hashlib
 import http.client
 import io
+import os
 import runpy
 import socket
 import ssl
@@ -10,6 +11,7 @@ import subprocess
 import tarfile
 import unittest
 import urllib.error
+import zipfile
 from pathlib import Path
 from unittest.mock import call, patch
 
@@ -17,7 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SECURITY = runpy.run_path(str(ROOT / "scripts/security_tools.py"))
 URL = "https://example.invalid/scanner"
 BASE = "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1"
-FILENAME = "gitleaks_8.30.1_linux_x64.tar.gz"
+FILENAME = (
+    "gitleaks_8.30.1_windows_x64.zip" if os.name == "nt" else "gitleaks_8.30.1_linux_x64.tar.gz"
+)
 
 
 def http_error(code):
@@ -133,14 +137,22 @@ class ScannerIntegrityTests(unittest.TestCase):
         self.urlopen = self.enterContext(patch("urllib.request.urlopen"))
         self.sleep = self.enterContext(patch("time.sleep"))
         self.execute = self.enterContext(patch("subprocess.run"))
-        self.extract = self.enterContext(patch("tarfile.open", wraps=tarfile.open))
+        self.extract = self.enterContext(
+            patch("zipfile.ZipFile", wraps=zipfile.ZipFile)
+            if os.name == "nt"
+            else patch("tarfile.open", wraps=tarfile.open)
+        )
         self.enterContext(patch("platform.system", return_value="Linux"))
         self.enterContext(patch("platform.machine", return_value="x86_64"))
         output = io.BytesIO()
-        with tarfile.open(fileobj=output, mode="w:gz") as archive:
-            member = tarfile.TarInfo("gitleaks")
-            member.size = len(b"synthetic executable")
-            archive.addfile(member, io.BytesIO(b"synthetic executable"))
+        if os.name == "nt":
+            with zipfile.ZipFile(output, "w") as archive:
+                archive.writestr("gitleaks.exe", b"synthetic executable")
+        else:
+            with tarfile.open(fileobj=output, mode="w:gz") as archive:
+                member = tarfile.TarInfo("gitleaks")
+                member.size = len(b"synthetic executable")
+                archive.addfile(member, io.BytesIO(b"synthetic executable"))
         self.data = output.getvalue()
         self.checksums = f"{hashlib.sha256(self.data).hexdigest()}  {FILENAME}\n".encode()
         self.extract.reset_mock()
