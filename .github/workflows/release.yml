@@ -7,14 +7,34 @@ on:
 permissions:
   contents: read
 jobs:
+  version:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.check.outputs.changed }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - id: check
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          if [ "$GITHUB_REF_TYPE" = tag ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            changed=$(python scripts/package_release.py --changed-since "$BEFORE_SHA")
+            echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          fi
   gate:
+    needs: version
+    if: needs.version.outputs.changed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     permissions:
       contents: read
       actions: read
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - run: python scripts/release_gate.py --wait-seconds 1200
         env:
           GH_TOKEN: ${{ github.token }}
@@ -26,11 +46,11 @@ jobs:
       contents: write
       actions: read
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11'
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
         with:
           node-version: '24'
       - name: Validate release version and tag

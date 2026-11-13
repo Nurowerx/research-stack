@@ -107,6 +107,23 @@ class ReleasePackagingTests(unittest.TestCase):
                 PACKAGING["package"](self.root)
         self.assertFalse((self.root / "dist").exists())
 
+    def test_dependency_only_edits_do_not_request_another_release(self):
+        (self.root / "pyproject.toml").write_text(
+            '[project]\nversion = "0.1.1"\ndependencies = ["example==2.0.0"]\n'
+        )
+        self.assertFalse(PACKAGING["version_changed"](self.root, self.sha))
+
+    def test_version_change_requests_a_release(self):
+        (self.root / "pyproject.toml").write_text('[project]\nversion = "0.1.2"\n')
+        self.assertTrue(PACKAGING["version_changed"](self.root, self.sha))
+
+    def test_first_push_requests_a_release(self):
+        self.assertTrue(PACKAGING["version_changed"](self.root, "0" * 40))
+
+    def test_unknown_previous_commit_is_not_treated_as_a_version_change(self):
+        with self.assertRaises(subprocess.CalledProcessError):
+            PACKAGING["version_changed"](self.root, "missing-commit")
+
     def test_stale_distribution_is_rejected(self):
         (self.root / "dist").mkdir()
         (self.root / "dist/nurowerx_research_stack-0.1.0-py3-none-any.whl").write_bytes(b"old")
